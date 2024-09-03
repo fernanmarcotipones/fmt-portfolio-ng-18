@@ -1,24 +1,20 @@
 import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
-import { Observable, Subject, tap } from "rxjs";
+import { inject, Injectable } from "@angular/core";
+import { Observable, tap } from "rxjs";
+import { cloneDeep } from 'lodash-es';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
+  data: any;
   private dummyDataUrl: string = 'assets/data/data.json';
-  private dataSubject = new Subject<any>();
-  data$ = this.dataSubject.asObservable();
+  private http = inject(HttpClient);
 
-  constructor(private http: HttpClient) {}
-
-  setData(data: any): void {
-    this.dataSubject.next(data);
-  }
   fetchData(): Observable<any> {
     return this.http.get(this.dummyDataUrl)
       .pipe(
-        tap(data => this.setData(data))
+        tap(data => this.data = cloneDeep(data))
       )
   }
 }

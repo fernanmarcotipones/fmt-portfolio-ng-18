@@ -1,11 +1,12 @@
 import { Component, inject, OnDestroy, OnInit, signal } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ProfileService } from '../../services/profile.service';
+import { ComponentsModule } from './components/components.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ComponentsModule],
   providers: [ProfileService],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'

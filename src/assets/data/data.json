@@ -1,6 +1,7 @@
 {
-  "firstName": "Fernan Marco Adriansyah",
-  "lastName": "Tipones",
-  "position": "Software Engineer",
-  "pages": []
+  "bannerData": {
+    "firstName": "Fernan Marco Adriansyah",
+    "lastName": "Tipones",
+    "position": "Software Engineer"
+  }
 }
