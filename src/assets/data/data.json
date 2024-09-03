@@ -13,5 +13,33 @@
       { "name": "Filipino", "imgUrl": "/assets/images/languages/filipino.png" },
       { "name": "Indonesian", "imgUrl": "/assets/images/languages/indonesian.png" }
     ]
+  },
+  "experienceData": {
+    "experiences": [
+      {
+        "title": "Front-end Developer",
+        "company": "FEI Systems",
+        "startDate": "2022-09-01T00:00:00.000Z",
+        "endDate": null,
+        "isCurrentCompany": true,
+        "companyImgUrl": "/assets/images/companies/feisystems.jpeg"
+      },
+      {
+        "title": "Angular Developer",
+        "company": "Legalsight",
+        "startDate": "2020-03-01T00:00:00.000Z",
+        "endDate": "2022-08-31T00:00:00.000Z",
+        "isCurrentCompany": false,
+        "companyImgUrl": "/assets/images/companies/legalsight.jpeg"
+      },
+      {
+        "title": "Software Engineer",
+        "company": "98Labs",
+        "startDate": "2017-02-01T00:00:00.000Z",
+        "endDate": "2020-03-31T00:00:00.000Z",
+        "isCurrentCompany": false,
+        "companyImgUrl": "/assets/images/companies/98labs.jpeg"
+      }
+    ]
   }
 }

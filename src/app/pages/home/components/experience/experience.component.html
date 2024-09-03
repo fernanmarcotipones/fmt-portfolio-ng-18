@@ -1,0 +1,16 @@
+<div class="experience">
+  <div class="container py-3">
+    @for (experience of data()?.experiences; track experience.title) {
+      <div class="row align-items-center">
+        <div class="col-md-2">
+          <img [src]="experience?.companyImgUrl" alt="Company Image">
+        </div>
+        <div class="col-md-10">
+          <h1>{{experience?.title}}</h1>
+          <h2>{{experience?.company}}</h2>
+          <h3>{{experience?.startDate | date}} - {{experience?.isCurrentCompany ? 'Present' : (experience?.endDate | date)}}</h3>
+        </div>
+      </div>
+    }
+  </div>
+</div>
