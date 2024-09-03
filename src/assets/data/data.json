@@ -2,9 +2,16 @@
   "bannerData": {
     "firstName": "Fernan Marco Adriansyah",
     "lastName": "Tipones",
-    "position": "Front-end Developer"
+    "position": "Front-end Developer",
+    "bannerImgUrl": "/assets/images/fmt.png"
   },
   "profileData": {
-    "description": "I’m a Front-end Developer with nearly 8 years of experience, working regularly with product team and back-end developers. I’m proficient in various JavaScript frameworks especially Angular and have a solid background in responsive design for both web and mobile projects. My keen attention to detail and ability to adapt to any project environment help me consistently deliver effective solutions."
+    "profileImgUrl": "/assets/images/fmt-profile.jpg",
+    "description": "I’m a Front-end Developer with nearly 8 years of experience, working regularly with product team and back-end developers. I’m proficient in various JavaScript frameworks especially Angular and have a solid background in responsive design for both web and mobile projects. My keen attention to detail and ability to adapt to any project environment help me consistently deliver effective solutions.",
+    "languages": [
+      { "name": "English", "imgUrl": "/assets/images/languages/english.png" },
+      { "name": "Filipino", "imgUrl": "/assets/images/languages/filipino.png" },
+      { "name": "Indonesian", "imgUrl": "/assets/images/languages/indonesian.png" }
+    ]
   }
 }

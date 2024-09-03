@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-4">
-          <img src="/assets/images/fmt.png" alt="Banner Image" />
+          <img [src]="data()?.bannerImgUrl" alt="Banner Image" />
         </div>
         <div class="col-md-8">
           <h1>{{data()?.firstName}}</h1>

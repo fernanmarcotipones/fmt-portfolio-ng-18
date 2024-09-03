@@ -2,22 +2,35 @@
   height: 100vh;
 
   .container,
+  .content,
   .row {
     height: inherit;
   }
 
-  p.description {
-    text-align: justify;
-    font-size: 2rem;
+  .content {
+    flex-direction: column;
     font-family: "Teko", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 0;
-  }
-  
 
-  img {
-    width: 100%;
-    border-radius: 100%;
+    .description {
+      flex: 7;
+      
+      p {
+        text-align: justify;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    .languages {
+      flex: 3;
+      border-top: 1px solid black;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }

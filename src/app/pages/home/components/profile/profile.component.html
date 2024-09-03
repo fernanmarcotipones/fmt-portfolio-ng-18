@@ -1,12 +1,24 @@
 <div class="profile">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-9">
-        <p class="description mb-0 px-2">{{data()?.description}}</p>
+    <div class="content d-flex flex-direction-column">
+      <div class="description row align-items-center">
+        <div class="col-md-9">
+          <p class="mb-0 px-2 fs-2">{{data()?.description}}</p>
+        </div>
+        <div class="col-md-3">
+          <img [src]="data()?.profileImgUrl" alt="Profile Image">
+        </div>
       </div>
-      <div class="col-md-3">
-        <img src="/assets/images/fmt-profile.jpg" alt="Profile Image">
-      </div>
+      @if (data()?.languages.length) {
+        <div class="languages row align-items-center justify-content-around">
+          @for (language of data()?.languages; track language.name) {
+            <div class="col-md-2 text-center">
+              <img [src]="language?.imgUrl" alt="Language Image">
+              <span class="fs-2">{{language?.name}}</span>
+            </div>
+          }
+        </div>
+      }
     </div>
   </div>
 </div>
