@@ -41,5 +41,206 @@
         "companyImgUrl": "/assets/images/companies/98labs.jpeg"
       }
     ]
+  },
+  "projectData": {
+    "projects": [
+      {
+        "title": "Makati Medical Society Website Application",
+        "company": "98Labs",
+        "startDate": "2017-05-01T00:00:00.000Z",
+        "endDate": "2017-09-31T00:00:00.000Z",
+        "descriptions": [
+          "Created website app for Makati Medical Society with member information and messaging tools.",
+          "Utilized JSX, CSS, ReactJS, ReduxJS, and Firebase as Front-End Developer."
+        ],
+        "techStack": ["CSS", "Bootstrap", "Javascript", "React", "Redux", "Firebase"],
+        "link": null,
+        "logo": "/assets/images/projects/mkms/logo.png",
+        "images": [
+          "/assets/images/projects/mkms/1.png",
+          "/assets/images/projects/mkms/2.png",
+          "/assets/images/projects/mkms/3.png"
+        ]
+      },
+      {
+        "title": "Electric Studio Website Application",
+        "company": "98Labs",
+        "startDate": "2017-10-01T00:00:00.000Z",
+        "endDate": "2018-02-01T00:00:00.000Z",
+        "descriptions": [
+          "As a Full Stack Developer, I actively participated in the revamp and expansion of Electric Studio\\'s website application.",
+          "Improved existing project with outdated frameworks and added new features for client and admin sides.",
+          "Utilized HTML5, SASS, AngularJS, Python, and MongoDB for responsive UI and seamless functionality.",
+          "Upgraded website allowing customers to book cycling classes online, with admin web app for content management."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Javascript", "Angular", "Python", "MongoDB"],
+        "link": "https://www.electricstudio.ph/",
+        "logo": "/assets/images/projects/es-web/logo.png",
+        "images": [
+          "/assets/images/projects/es-web/1.png",
+          "/assets/images/projects/es-web/2.png",
+          "/assets/images/projects/es-web/3.png"
+        ]
+      },
+      {
+        "title": "DevLive Website and Mobile Application",
+        "company": "98Labs",
+        "startDate": "2018-02-27T00:00:00.000Z",
+        "endDate": "2019-07-01T00:00:00.000Z",
+        "descriptions": [
+          "As a Full Stack Developer, I contributed to mobile Android app and website for Filipino citizens and local government units.",
+          "App allowed users to view, provide feedback, and report on government local projects.",
+          "Project owned by UNDP and partnered with government agencies for transparency and citizen participation.",
+          "Utilized HTML5, SASS, Angular 5, Ionic 3, Parse Server, and MongoDB for user-friendly platform promoting effective project management and transparency."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "Typescript", "Angular", "Angular Material", "Ionic", "RxJS", "Parse", "MongoDB", "Docker"],
+        "link": "https://apkpure.com/devlive/org.devlive.app",
+        "logo": "/assets/images/projects/devlive/logo.png",
+        "images": [
+          "/assets/images/projects/devlive/1.png",
+          "/assets/images/projects/devlive/2.png",
+          "/assets/images/projects/devlive/3.png",
+          "/assets/images/projects/devlive/4.png",
+          "/assets/images/projects/devlive/5.png",
+          "/assets/images/projects/devlive/6.png",
+          "/assets/images/projects/devlive/7.png"
+        ]
+      },
+      {
+        "title": "Electric Studio Mobile Application",
+        "company": "98Labs",
+        "startDate": "2019-05-01T00:00:00.000Z",
+        "endDate": "2019-06-01T00:00:00.000Z",
+        "descriptions": [
+          "As a Front-End Developer, I Rewrote Electric Studio iOS app using HTML5, SASS, and Ionic 4 Angular.",
+          "Updated framework and implemented new API for improved performance and user experience.",
+          "Allowing Customers to conveniently book and manage indoor cycling classes on their iPhones, streamlining class reservations."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Javascript", "Angular", "Ionic"],
+        "link": "https://apps.apple.com/ph/app/electric-studio-ph/id1391470075",
+        "logo": "/assets/images/projects/es-mobile/logo.png",
+        "images": [
+          "/assets/images/projects/es-mobile/1.png",
+          "/assets/images/projects/es-mobile/2.png",
+          "/assets/images/projects/es-mobile/3.png"
+        ]
+      },
+      {
+        "title": "Gifmo Admin Portal Website Application",
+        "company": "98Labs",
+        "startDate": "2019-07-01T00:00:00.000Z",
+        "endDate": "2019-10-01T00:00:00.000Z",
+        "descriptions": [
+          "I served as the Technical Team Leader and Front-End Developer, successfully rewriting the admin website for the GIFMO cards system.",
+          "Our task involved migrating the website to an Angular 7 project and completely revamping the admin API using KoaJS and PostgreSQL.",
+          "The outcome was an efficient and user-friendly system, facilitating smooth management of partners, cards, users, and inventory.",
+          "I utilized HTML5, SASS, and Angular 7 to create a responsive interface, ensuring an enhanced user experience."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "Angular Material", "Typescript", "Angular", "RxJS"],
+        "link": "https://gifmo.cards/",
+        "logo": "/assets/images/projects/gifmo/logo.jpg",
+        "images": [
+          "/assets/images/projects/gifmo/1.png",
+          "/assets/images/projects/gifmo/2.png",
+          "/assets/images/projects/gifmo/3.png"
+        ]
+      },
+      {
+        "title": "Electric Studio Website & Mobile Application Rewrite",
+        "company": "98Labs",
+        "startDate": "2019-10-01T00:00:00.000Z",
+        "endDate": "2020-03-01T00:00:00.000Z",
+        "descriptions": [
+          "As a Front-End Developer, I enhanced the Electric Studio website application for online class bookings, removing Python/MongoDB dependencies, and rewriting the project with a separate KoaJS/PostgreSQL backend and Angular 9/Ionic 4 frontend.",
+          "The result was a more efficient system for class reservations and an admin web application to manage website content effectively.",
+          "I ensured a responsive and user-friendly interface, utilizing HTML5, SASS, Ionic, and Angular."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "Typescript", "Angular", "Ionic", "RxJS"],
+        "link": "https://ondemand.electricstudio.ph/",
+        "logo": "/assets/images/projects/es-rewrite/logo.png",
+        "images": [
+          "/assets/images/projects/es-rewrite/1.png",
+          "/assets/images/projects/es-rewrite/2.png",
+          "/assets/images/projects/es-rewrite/3.png"
+        ]
+      },
+      {
+        "title": "Sun IP Website Application",
+        "company": "Legalsight",
+        "startDate": "2020-03-01T00:00:00.000Z",
+        "endDate": "2022-08-01T00:00:00.000Z",
+        "descriptions": [
+          "As a Front-End Developer, I maintained and enhanced a website application that provided translation and foreign filing services for intellectual property, utilizing HTML5, SASS, Angular 7, Jasmine, and Karma to ensure a user-friendly interface.",
+          "My tasks included developing new features for each version, enabling effective project/task management, and facilitating communication for all users."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Angular", "RxJS", "Jasmine", "Karma"],
+        "link": "https://sunip.com/",
+        "logo": "/assets/images/projects/sunip/logo.png",
+        "images": [
+          "/assets/images/projects/sunip/1.png",
+          "/assets/images/projects/sunip/2.png",
+          "/assets/images/projects/sunip/3.png"
+        ]
+      },
+      {
+        "title": "Park Evaluations Website Application",
+        "company": "Legalsight",
+        "startDate": "2020-03-02T00:00:00.000Z",
+        "endDate": "2022-08-01T00:00:00.000Z",
+        "descriptions": [
+          "As a Front-End Developer, my role involved maintaining and improving a website application that provided foreign credential evaluation and immigration services.",
+          "I utilized HTML5, SASS, Angular 7, Jasmine, and Karma to ensure a user-friendly interface.",
+          "My tasks included developing new features for each version, offering effective project/task management, and communication tools for users."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Angular", "RxJS", "Jasmine", "Karma"],
+        "link": "https://parkeval.com/",
+        "logo": "/assets/images/projects/parkeval/logo.png",
+        "images": [
+          "/assets/images/projects/parkeval/1.png",
+          "/assets/images/projects/parkeval/2.png",
+          "/assets/images/projects/parkeval/3.png"
+        ]
+      },
+      {
+        "title": "Park Advertising Website Application",
+        "company": "Legalsight",
+        "startDate": "2020-08-01T00:00:00.000Z",
+        "endDate": "2022-08-01T00:00:00.000Z",
+        "descriptions": [
+          "As a front-end developer, my responsibilities included creating and maintaining a new website application within the existing park evaluations project.",
+          "The application offered perm advertising services, immigration-based recruitment, and consulting for lawyers and law firms, alongside management and communication tools for users to monitor their projects and tasks.",
+          "I ensured a responsive and user-friendly interface using HTML5, SASS, Angular 7, Jasmine, and Karma.",
+          "Additionally, I developed new features for future versions, enhancing the application's capabilities and improving the overall user experience."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Angular", "RxJS", "Jasmine", "Karma"],
+        "link": "https://parkadvertising.com/",
+        "logo": "/assets/images/projects/parkads/logo.png",
+        "images": [
+          "/assets/images/projects/parkads/1.png",
+          "/assets/images/projects/parkads/2.png",
+          "/assets/images/projects/parkads/3.png"
+        ]
+      },
+      {
+        "title": "Blue Compass Solution",
+        "company": "FEI Systems",
+        "startDate": "2022-09-01T00:00:00.000Z",
+        "endDate": null,
+        "descriptions": [
+          "As a front-end developer, I developed new features for the application, intended for presentation to potential clients by the demo team.",
+          "The application offers comprehensive and innovative IT solutions for efficient health and human services delivery.",
+          "The suite includes various modules tailored to meet the distinct and intricate needs of the agencies and organizations it serves.",
+          "I utilized the Angular 13 framework to create a new temporary feature, ensuring a smooth and seamless presentation by the demo team across different environments in the application."
+        ],
+        "techStack": ["HTML", "CSS", "SASS", "Angular Material", "Angular", "RxJS"],
+        "link": "https://feisystems.com/blue-compass-solutions/",
+        "logo": "/assets/images/projects/bluecompass/logo.svg",
+        "images": [
+          "/assets/images/projects/bluecompass/1.png",
+          "/assets/images/projects/bluecompass/2.png",
+          "/assets/images/projects/bluecompass/3.png"
+        ]
+      }
+    ]
   }
 }

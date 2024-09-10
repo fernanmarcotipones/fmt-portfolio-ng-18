@@ -4,6 +4,7 @@ import { BannerComponent } from './banner/banner.component';
 import { ProfileService } from '../../../services/profile.service';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   imports: [
@@ -13,11 +14,13 @@ import { ExperienceComponent } from './experience/experience.component';
     BannerComponent,
     ProfileComponent,
     ExperienceComponent,
+    ProjectsComponent,
   ],
   exports: [
     BannerComponent,
     ProfileComponent,
     ExperienceComponent,
+    ProjectsComponent,
   ],
   providers: [
     ProfileService,
