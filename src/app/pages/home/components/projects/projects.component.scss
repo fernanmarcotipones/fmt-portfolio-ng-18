@@ -1,7 +1,31 @@
 .projects {
   height: 100vh;
 
-  .container {
+  .container,
+  .content,
+  .row {
     height: inherit;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .actions {
+      flex: 1;
+    }
+
+    .project-list {
+      flex: 19;
+    }
+  }
+
+  img {
+    height: 400px;
+    width: 100%;
   }
 }

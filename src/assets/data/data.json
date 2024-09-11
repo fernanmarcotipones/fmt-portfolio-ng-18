@@ -45,7 +45,7 @@
   "projectData": {
     "projects": [
       {
-        "title": "Makati Medical Society Website Application",
+        "title": "Makati Medical Society Website",
         "company": "98Labs",
         "startDate": "2017-05-01T00:00:00.000Z",
         "endDate": "2017-09-31T00:00:00.000Z",
@@ -63,7 +63,7 @@
         ]
       },
       {
-        "title": "Electric Studio Website Application",
+        "title": "Electric Studio Website",
         "company": "98Labs",
         "startDate": "2017-10-01T00:00:00.000Z",
         "endDate": "2018-02-01T00:00:00.000Z",
@@ -83,7 +83,7 @@
         ]
       },
       {
-        "title": "DevLive Website and Mobile Application",
+        "title": "DevLive Website and Mobile",
         "company": "98Labs",
         "startDate": "2018-02-27T00:00:00.000Z",
         "endDate": "2019-07-01T00:00:00.000Z",
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "title": "Electric Studio Mobile Application",
+        "title": "Electric Studio Mobile",
         "company": "98Labs",
         "startDate": "2019-05-01T00:00:00.000Z",
         "endDate": "2019-06-01T00:00:00.000Z",
@@ -126,7 +126,7 @@
         ]
       },
       {
-        "title": "Gifmo Admin Portal Website Application",
+        "title": "Gifmo Admin Portal Website",
         "company": "98Labs",
         "startDate": "2019-07-01T00:00:00.000Z",
         "endDate": "2019-10-01T00:00:00.000Z",
@@ -146,7 +146,7 @@
         ]
       },
       {
-        "title": "Electric Studio Website & Mobile Application Rewrite",
+        "title": "Electric Studio Website & Mobile Rewrite",
         "company": "98Labs",
         "startDate": "2019-10-01T00:00:00.000Z",
         "endDate": "2020-03-01T00:00:00.000Z",
@@ -165,7 +165,7 @@
         ]
       },
       {
-        "title": "Sun IP Website Application",
+        "title": "Sun IP Website",
         "company": "Legalsight",
         "startDate": "2020-03-01T00:00:00.000Z",
         "endDate": "2022-08-01T00:00:00.000Z",
@@ -173,7 +173,7 @@
           "As a Front-End Developer, I maintained and enhanced a website application that provided translation and foreign filing services for intellectual property, utilizing HTML5, SASS, Angular 7, Jasmine, and Karma to ensure a user-friendly interface.",
           "My tasks included developing new features for each version, enabling effective project/task management, and facilitating communication for all users."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Angular", "RxJS", "Jasmine", "Karma"],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Typescript", "Angular", "RxJS", "Jasmine", "Karma"],
         "link": "https://sunip.com/",
         "logo": "/assets/images/projects/sunip/logo.png",
         "images": [
@@ -183,7 +183,7 @@
         ]
       },
       {
-        "title": "Park Evaluations Website Application",
+        "title": "Park Evaluations Website",
         "company": "Legalsight",
         "startDate": "2020-03-02T00:00:00.000Z",
         "endDate": "2022-08-01T00:00:00.000Z",
@@ -192,7 +192,7 @@
           "I utilized HTML5, SASS, Angular 7, Jasmine, and Karma to ensure a user-friendly interface.",
           "My tasks included developing new features for each version, offering effective project/task management, and communication tools for users."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Angular", "RxJS", "Jasmine", "Karma"],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Typescript", "Angular", "RxJS", "Jasmine", "Karma"],
         "link": "https://parkeval.com/",
         "logo": "/assets/images/projects/parkeval/logo.png",
         "images": [
@@ -202,7 +202,7 @@
         ]
       },
       {
-        "title": "Park Advertising Website Application",
+        "title": "Park Advertising Website",
         "company": "Legalsight",
         "startDate": "2020-08-01T00:00:00.000Z",
         "endDate": "2022-08-01T00:00:00.000Z",
@@ -212,7 +212,7 @@
           "I ensured a responsive and user-friendly interface using HTML5, SASS, Angular 7, Jasmine, and Karma.",
           "Additionally, I developed new features for future versions, enhancing the application's capabilities and improving the overall user experience."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Angular", "RxJS", "Jasmine", "Karma"],
+        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Typescript", "Angular", "RxJS", "Jasmine", "Karma"],
         "link": "https://parkadvertising.com/",
         "logo": "/assets/images/projects/parkads/logo.png",
         "images": [
@@ -222,7 +222,7 @@
         ]
       },
       {
-        "title": "Blue Compass Solution",
+        "title": "Blue Compass Website",
         "company": "FEI Systems",
         "startDate": "2022-09-01T00:00:00.000Z",
         "endDate": null,
@@ -232,7 +232,7 @@
           "The suite includes various modules tailored to meet the distinct and intricate needs of the agencies and organizations it serves.",
           "I utilized the Angular 13 framework to create a new temporary feature, ensuring a smooth and seamless presentation by the demo team across different environments in the application."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Angular Material", "Angular", "RxJS"],
+        "techStack": ["HTML", "CSS", "SASS", "Angular Material", "Typescript", "Angular", "RxJS"],
         "link": "https://feisystems.com/blue-compass-solutions/",
         "logo": "/assets/images/projects/bluecompass/logo.svg",
         "images": [

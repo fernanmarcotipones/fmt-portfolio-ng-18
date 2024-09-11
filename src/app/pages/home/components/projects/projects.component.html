@@ -1,13 +1,23 @@
 <div class="projects">
   <div class="container">
-    <!-- <div class="row">
-      @for (project of data()?.projects; track project.title) {
-        <div class="col-md-3">
-          <img [src]="project?.imgUrl" alt="Project Image">
-          <h1>{{project?.title}}</h1>
-          <h3>{{project?.description}}</h3>
+    <div class="content py-3">
+      <div class="actions mb-3">
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <input type="text" class="form-control" placeholder="Search by title/tech stack" [(ngModel)]="filterText">
+          </div>
         </div>
-      }
-    </div> -->
+      </div>
+      <div class="project-list row flex-wrap">
+        @for (project of projects(); track project.title) {
+          <div class="col-md-6 text-center mb-3">
+            <img [src]="project?.images[0]" alt="Project Image">
+            <h4 class="mt-2">{{project?.title}}</h4>
+          </div>
+        } @empty {
+          <div class="col-12 h-100 center">No projects found</div>
+        }
+      </div>
+    </div>
   </div>
 </div>

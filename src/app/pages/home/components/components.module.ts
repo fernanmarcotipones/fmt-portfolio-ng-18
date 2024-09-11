@@ -5,10 +5,12 @@ import { ProfileService } from '../../../services/profile.service';
 import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
   ],
   declarations: [
     BannerComponent,
