@@ -2,18 +2,18 @@
   <div class="container py-3">
     <div class="row center-y">
     @for (experience of data()?.experiences; track experience.title) {
-      <div class="col-md-6">
+      <div class="col-md-4">
         <div class="row center-y">
           <div class="col-md-3">
             <img [src]="experience?.companyImgUrl" alt="Company Image">
           </div>
           <div class="col-md-9">
-            <h1>{{experience?.title}}</h1>
-            <h3>{{experience?.company}}</h3>
-            <h3>
+            <h3>{{experience?.title}}</h3>
+            <h4>{{experience?.company}}</h4>
+            <h4>
               {{experience?.startDate | date: 'MMMM yyyy'}} - 
               {{experience?.isCurrentCompany ? 'Present' : (experience?.endDate | date: 'MMMM yyyy')}}
-            </h3>
+            </h4>
           </div>
         </div>
       </div>

@@ -21,11 +21,35 @@
 
     .project-list {
       flex: 19;
-    }
-  }
 
-  img {
-    height: 400px;
-    width: 100%;
+      .project {
+        cursor: pointer;
+
+        &:hover {
+          .project-img {
+            border: 1px solid red;
+
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .project-img {
+          height: 250px;
+          width: 100%;
+          overflow: hidden;
+          border: 1px solid black;
+          border-radius: 10px;
+
+          img {
+            width: 100%;
+            min-height: 100%;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+
+    }
   }
 }
