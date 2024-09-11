@@ -8,7 +8,7 @@ import { Component, computed, input, signal, effect } from '@angular/core';
 export class ProjectsComponent {
   data = input<any>(null);
   filterText = signal<string>('');
-  projects = computed(() => this.setupProjects(this.data(), this.filterText()));
+  projects = computed<any[]>(() => this.setupProjects(this.data(), this.filterText()));
 
   setupProjects(data: any, filterText: string): any[] {
     let projects: any[] = data?.projects || [];

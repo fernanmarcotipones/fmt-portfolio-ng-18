@@ -1,0 +1,25 @@
+.tech-stack {
+  height: 70vh;
+  background-color: black;
+  color: white;
+
+  .container,
+  .content,
+  .row {
+    height: inherit;
+  }
+
+  .tech-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  img {
+    height: 75px;
+    width: 100%;
+  }
+
+  .progress-bar {
+    transition: all 0.2s ease-in-out;
+  }
+}

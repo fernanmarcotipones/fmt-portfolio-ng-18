@@ -1,0 +1,29 @@
+<div class="tech-stack">
+  <div class="container">
+    <div class="content center-y">
+      <div class="tech-list row py-3">
+        @for (tech of techs(); track tech.name) {
+          <div class="col-md-4 mb-3">
+            <div class="row center-y">
+              <div class="col-md-3 center">
+                <img [src]="tech?.imgUrl" alt="Company Image">
+              </div>
+              <div class="col-md-9 center-y flex-wrap">
+                <h3>{{tech?.name}}</h3>
+                <div class="progress w-100 bg-white">
+                  <div 
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    [style.width]="getTechWidth(tech?.dayUsed) + '%'">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

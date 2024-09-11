@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FormsModule } from '@angular/forms';
+import { TechStackComponent } from './tech-stack/tech-stack.component';
 
 @NgModule({
   imports: [
@@ -17,12 +18,14 @@ import { FormsModule } from '@angular/forms';
     ProfileComponent,
     ExperienceComponent,
     ProjectsComponent,
+    TechStackComponent,
   ],
   exports: [
     BannerComponent,
     ProfileComponent,
     ExperienceComponent,
     ProjectsComponent,
+    TechStackComponent,
   ],
   providers: [
     ProfileService,
