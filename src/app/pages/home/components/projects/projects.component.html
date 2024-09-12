@@ -3,8 +3,24 @@
     <div class="content py-3">
       <div class="actions mb-3">
         <div class="row align-items-center">
-          <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Search by title/tech stack" [(ngModel)]="filterText">
+          <div class="search col-md-3">
+            <input type="text" class="form-control" placeholder="Search by title/tech stack" [(ngModel)]="searchText">
+          </div>
+          <div class="filter col-md-9 center-y overflow-x-auto">
+            <button 
+              class="btn btn-sm mx-1 center"
+              (click)="clearFilter()"
+              [ngClass]="!filters().length ? 'btn-primary' : 'btn-secondary'">
+                All
+            </button>
+            @for (tech of techs(); track tech.name) {
+              <button 
+                class="btn btn-sm mx-1 center"
+                (click)="toggleFilter(tech.name)"
+                [ngClass]="filters().includes(tech.name) ? 'btn-primary' : 'btn-secondary'">
+                {{ tech?.name !== 'Angular Material' ? tech?.name : 'Material' }}
+              </button>
+            }
           </div>
         </div>
       </div>

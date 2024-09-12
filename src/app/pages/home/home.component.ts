@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit, OnDestroy {
           this.data.set(this.profileService.data());
           this.isLoading = false;
           console.log('data', this.data());
-        }, 3000);
+        }, 300);
     });
 
     this.subscriptions.push(profileSub);
