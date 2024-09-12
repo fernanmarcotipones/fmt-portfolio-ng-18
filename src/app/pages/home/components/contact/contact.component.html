@@ -1,0 +1,17 @@
+<div class="contact">
+  <div class="container">
+    <div class="row center-y">
+      <div class="col-md-6 center-y">
+        <img [src]="data()?.logo" alt="Footer Logo">
+        <h5 class="mb-0 mx-2">Fernan Marco Tipones © 2024</h5>
+      </div>
+      <div class="contacts col-md-6 center-y justify-content-end">
+        @for (contact of data()?.contacts; track contact.name) {
+          <a [href]="contact?.link" target="_blank" class="mx-2">
+            <img [src]="contact?.img" alt="Company Image">
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+</div>

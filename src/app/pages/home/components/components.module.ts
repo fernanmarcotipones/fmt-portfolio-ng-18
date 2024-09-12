@@ -7,6 +7,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FormsModule } from '@angular/forms';
 import { TechStackComponent } from './tech-stack/tech-stack.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { TechStackComponent } from './tech-stack/tech-stack.component';
     ExperienceComponent,
     ProjectsComponent,
     TechStackComponent,
+    ContactComponent,
   ],
   exports: [
     BannerComponent,
@@ -26,6 +28,7 @@ import { TechStackComponent } from './tech-stack/tech-stack.component';
     ExperienceComponent,
     ProjectsComponent,
     TechStackComponent,
+    ContactComponent,
   ],
   providers: [
     ProfileService,
