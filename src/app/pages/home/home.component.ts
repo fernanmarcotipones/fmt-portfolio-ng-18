@@ -15,10 +15,18 @@ export class HomeComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] = [];
   private profileService = inject(ProfileService);
   data = signal<any>(null);
+  isLoading: boolean = true;
 
   ngOnInit(): void {
-    const profileSub: Subscription = this.profileService.fetchData().subscribe(data => {
-      this.data.set(data)
+    const profileSub: Subscription = this.profileService
+      .fetchData()
+      .subscribe(data => {
+        if (!data) return;
+        setTimeout(() => {
+          this.data.set(this.profileService.data());
+          this.isLoading = false;
+          console.log('data', this.data());
+        }, 3000);
     });
 
     this.subscriptions.push(profileSub);
