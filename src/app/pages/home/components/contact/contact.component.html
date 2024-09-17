@@ -8,7 +8,7 @@
       <div class="contacts col-md-6 center-y justify-content-end">
         @for (contact of data()?.contacts; track contact.name) {
           <a [href]="contact?.link" target="_blank" class="mx-2">
-            <img [src]="contact?.img" alt="Company Image">
+            <img [src]="contact?.img" alt="Contact Link Image" [ngClass]="{'inverted': contact?.isInverted}">
           </a>
         }
       </div>

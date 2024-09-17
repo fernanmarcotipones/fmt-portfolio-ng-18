@@ -249,22 +249,26 @@
       { 
         "name": "LinkedIn",
         "link": "https://www.linkedin.com/in/fernan-marco-tipones",
-        "img": "/assets/images/contacts/linkedin.svg" 
+        "img": "/assets/images/contacts/linkedin.svg",
+        "isInverted": false
       },
       { 
         "name": "Upwork",
         "link": "https://www.upwork.com/freelancers/~01ead46f18db3fc60e",
-        "img": "/assets/images/contacts/upwork.svg" 
+        "img": "/assets/images/contacts/upwork.svg",
+        "isInverted": false
       },
       { 
-        "name": "Jobstreet",
-        "link": "https://www.jobstreet.com.ph/profile/fernanmarcoadriansyah-tipones-94DWM25TPT",
-        "img": "/assets/images/contacts/jobstreet.svg" 
+        "name": "Github",
+        "link": "https://github.com/fernanmarcotipones",
+        "img": "/assets/images/contacts/github.svg",
+        "isInverted": true
       },
       { 
         "name": "Gmail",
         "link": "mailto:fernanmarcotipones@gmail.com",
-        "img": "/assets/images/contacts/gmail.svg" 
+        "img": "/assets/images/contacts/gmail.svg",
+        "isInverted": false
       }
     ]
   }
