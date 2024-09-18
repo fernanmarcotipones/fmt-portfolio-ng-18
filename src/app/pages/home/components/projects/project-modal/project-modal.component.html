@@ -4,7 +4,7 @@
       <div class="carousel">
         <div class="carousel-inner">
           @for (imageUrl of project()?.images; track imageUrl;) {
-            <div class="carousel-item">
+            <div class="carousel-item" [ngClass]="{'active': $index === currentIndex}">
               <img [src]="imageUrl" alt="Image {{ $index + 1 }}">
             </div>
           }
@@ -15,7 +15,7 @@
         </div>
         <div class="carousel-preview">
           @for (imageUrl of project()?.images; track imageUrl; let i = $index) {
-            <div class="carousel-preview-item" [class.active]="i === currentIndex" (click)="setActiveImage(i)">
+            <div class="carousel-preview-item" [ngClass]="{'active': $index === currentIndex}" (click)="setActiveImage(i)">
               <img [src]="imageUrl" alt="Image {{ i + 1 }}">
             </div>
           }

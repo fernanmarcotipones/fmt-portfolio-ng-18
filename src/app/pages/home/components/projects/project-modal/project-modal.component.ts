@@ -9,25 +9,13 @@ import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 export class ProjectModalComponent {
   private matDialog = inject(MatDialog);
   private data = inject(MAT_DIALOG_DATA);
+  
   project = signal<any>(this.data?.project);
   imagesLength = computed(() => this.project().images.length);
-
   currentIndex = 0;
-
-  ngAfterViewInit() {
-    this.setActiveImage(this.currentIndex);
-  }
 
   setActiveImage(index: number) {
     this.currentIndex = index;
-    // Update the active image in the carousel-inner
-    const carouselItems = document.querySelectorAll('.carousel-item');
-    carouselItems.forEach((item, i) => {
-      item.classList.remove('active');
-      if (i === index) {
-        item.classList.add('active');
-      }
-    });
   }
 
   prev() {
