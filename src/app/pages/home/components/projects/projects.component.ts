@@ -1,5 +1,7 @@
 import { Component, computed, input, signal, inject } from '@angular/core';
 import { ProfileService } from '../../../../services/profile.service';
+import { MatDialog } from '@angular/material/dialog';
+import { ProjectModalComponent } from './project-modal/project-modal.component';
 
 @Component({
   selector: 'fmt-projects',
@@ -8,6 +10,7 @@ import { ProfileService } from '../../../../services/profile.service';
 })
 export class ProjectsComponent {
   private profileService = inject(ProfileService);
+  private matDialog = inject(MatDialog);
 
   data = input<any>(null);
   searchText = signal<string>('');
@@ -57,5 +60,15 @@ export class ProjectsComponent {
     }
 
     return isSearchMatched && isFilterMatched;
+  }
+
+  openProjectModal(project: any): void {
+    console.log('project', project);
+    this.matDialog.open(ProjectModalComponent, {
+      width: '80vw',
+      height: '80vh',
+      maxWidth: '80vw',
+      data: { project }
+    });
   }
 }

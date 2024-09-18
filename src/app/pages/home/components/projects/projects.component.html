@@ -4,7 +4,7 @@
       <div class="actions mb-3">
         <div class="row align-items-center">
           <div class="search col-md-3">
-            <input type="text" class="form-control" placeholder="Search by title/tech stack" [(ngModel)]="searchText">
+            <input type="text" class="form-control" placeholder="Search Project" [(ngModel)]="searchText">
           </div>
           <div class="filter col-md-9 center-y overflow-x-auto">
             <button 
@@ -26,11 +26,11 @@
       </div>
       <div class="project-list row flex-wrap">
         @for (project of projects(); track project.title) {
-          <div class="project col-md-4 text-center mb-3">
+          <div class="project col-md-6 text-center mb-3" (click)="openProjectModal(project)">
             <div class="project-img center">
               <img [src]="project?.images[0]" alt="Project Image">
+              <h4 class="mt-2">{{project?.title}}</h4>
             </div>
-            <h4 class="mt-2">{{project?.title}}</h4>
           </div>
         } @empty {
           <div class="col-12 h-100 center">No projects found</div>
@@ -39,3 +39,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #modalTemplate>
+  <div>This is a modal</div>
+</ng-template>

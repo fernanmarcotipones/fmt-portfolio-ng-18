@@ -1,0 +1,133 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  &-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+
+    &.active {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+
+    button {
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+
+      &.prev {
+        float: left;
+      }
+
+      &.next {
+        float: right;
+      }
+
+      mat-icon {
+        color: #fff;
+      }
+    }
+  }
+
+  &-preview {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+    opacity: 0;
+
+    &-item {
+      display: inline-block;
+      height: 100%;
+      margin: 0 10px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+      background-color: #000;
+
+      &.active {
+        border-color: #337ab7;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &-controls,
+  &-preview {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    .carousel-preview,
+    .carousel-controls {
+      opacity: 1;
+    }
+  }
+}
+
+.description {
+  height: 30%;
+  background-color: #000;
+  color: #fff;
+}
+
+.logo {
+  height: 40%;
+}
+
+.info {
+  height: 30%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  * {
+    width: 100%;
+  }
+}
+
+.techs {
+  height: 30%;
+}
