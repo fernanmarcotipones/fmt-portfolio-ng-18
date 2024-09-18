@@ -27,13 +27,13 @@
 
         &:hover {
           .project-img {
-            border: 1px solid red;
+            border: 1px solid black;
 
             img {
               transform: scale(1.1);
             }
 
-            h4 {
+            h5 {
               opacity: 1;
             }
           }
@@ -43,7 +43,7 @@
           height: 40vh;
           width: 100%;
           overflow: hidden;
-          border: 1px solid black;
+          border: 1px solid transparent;
           border-radius: 10px;
           position: relative;
 
@@ -53,13 +53,13 @@
             transition: all 0.3s ease;
           }
 
-          h4 {
+          h5 {
             position: absolute;
             bottom: 0;
             margin: 0;
             width: 100%;
             background: rgba(255,255,255,1);
-            border-top: 1px solid red;
+            border-top: 1px solid black;
             transition: all 0.3s ease;
             opacity: 0;
           }
