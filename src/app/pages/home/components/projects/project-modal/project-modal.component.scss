@@ -1,3 +1,17 @@
+.project-modal {
+  position: relative;
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
 .carousel {
   position: relative;
   width: 100%;
