@@ -23,39 +23,45 @@ export class ProfileService {
     const profileData = cloneDeep(data?.profileData);
     const experienceData = cloneDeep(data?.experienceData);
     const projectData = cloneDeep(data?.projectData);
-    const techStackData = this.setupTechStackData(data?.projectData);
+    const techStackData = this.setupTechStackData(data?.projectData, data?.techStackData);
     const contactData = cloneDeep(data?.contactData);
     const newData = { bannerData, profileData, experienceData, projectData, techStackData, contactData };
     this.data.set(newData);
     return newData;
   }
 
-  setupTechStackData(projectData: any): any {
-    if (!projectData) return null;
+  setupTechStackData(projectData: any, techStackData: any): any {
+    if (!projectData) return techStackData;
 
-    let techData: any;
-    let techArr: any[] = [];
-    let techObj: any = {};
+    let techData: any = cloneDeep(techStackData);
+    let projectTechs: any = {};
 
     projectData?.projects?.forEach((project: any) => {
       project.techStack.forEach((tech: string) => {
         const dayUsed = project.endDate ?
           Math.round((new Date(project.endDate).getTime() - new Date(project.startDate).getTime()) / (1000 * 3600 * 24)) :
           Math.round((new Date().getTime() - new Date(project.startDate).getTime()) / (1000 * 3600 * 24));
-          techObj[tech] = (techObj[tech] || 0) + dayUsed;
+          projectTechs[tech] = (projectTechs[tech] || 0) + dayUsed;
       });
     });
+    
+    Object.keys(projectTechs).forEach((techName: string) => {
+      const tech: any = techData.techs.find((tech: any) => tech.name.toLocaleLowerCase() === techName.toLocaleLowerCase());
 
-    techArr = Object.keys(techObj).map((tech: string) => (
-      { name: tech, dayUsed: techObj[tech], imgUrl: `/assets/images/tech/${tech.toLocaleLowerCase()}.svg` }
-    ));
+      if (tech) {
+        tech.dayUsed = projectTechs[techName];
+      } else {
+        const techObj: any = {
+          name: techName,
+          dayUsed: projectTechs[techName],
+          imgUrl: `/assets/images/tech/${techName.toLocaleLowerCase()}.svg`,
+          link: `https://www.google.com/search?q=${techName}`
+        }
+        techData.techs.push(techObj);
+      }
+    });
 
-    techArr.sort((a: any, b: any) => b.dayUsed - a.dayUsed);
-
-    techData = {
-      techs: cloneDeep(techArr)
-    }
-
+    techData.techs.sort((a: any, b: any) => b.dayUsed - a.dayUsed);
     return techData;
   }
 }

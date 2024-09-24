@@ -12,14 +12,32 @@
   .tech-list {
     flex-direction: column;
     width: 100%;
-  }
 
-  img {
-    height: 75px;
-    width: 100%;
-  }
+    .tech {
+      cursor: pointer;
 
-  .progress-bar {
-    transition: all 0.2s ease-in-out;
+      * {
+        transition: all 0.2s ease-in-out;
+      }
+
+      img {
+        height: 75px;
+        width: 100%;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+
+        h3 {
+          color: red;
+        }
+
+        .progress-bar {
+          background-color: red;
+        }
+      }
+    }
   }
 }

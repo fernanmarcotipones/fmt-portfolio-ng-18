@@ -13,4 +13,8 @@ export class TechStackComponent {
     if (!dayUsed) return 0;
     return Math.round(dayUsed / this.techs()[0].dayUsed * 100);
   }
+
+  openLink(link: string): void {
+    window.open(link, "_blank");
+  }
 }

@@ -3,7 +3,7 @@
     <div class="content center-y">
       <div class="tech-list row py-3">
         @for (tech of techs(); track tech.name) {
-          <div class="col-md-4 mb-3">
+          <div class="tech col-md-4 mb-3" (click)="openLink(tech?.link)">
             <div class="row center-y">
               <div class="col-md-3 center">
                 <img [src]="tech?.imgUrl" alt="Company Image">

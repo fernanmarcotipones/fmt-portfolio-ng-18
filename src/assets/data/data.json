@@ -9,9 +9,18 @@
     "profileImgUrl": "/assets/images/fmt-profile.jpg",
     "description": "I’m a Front-end Developer with nearly 8 years of experience, working regularly with product team and back-end developers. I’m proficient in various JavaScript frameworks especially Angular and have a solid background in responsive design for both web and mobile projects. My keen attention to detail and ability to adapt to any project environment help me consistently deliver effective solutions.",
     "languages": [
-      { "name": "English", "imgUrl": "/assets/images/languages/english.png" },
-      { "name": "Filipino", "imgUrl": "/assets/images/languages/filipino.png" },
-      { "name": "Indonesian", "imgUrl": "/assets/images/languages/indonesian.png" }
+      {
+        "name": "English",
+        "imgUrl": "/assets/images/languages/english.png"
+      },
+      {
+        "name": "Filipino",
+        "imgUrl": "/assets/images/languages/filipino.png"
+      },
+      {
+        "name": "Indonesian",
+        "imgUrl": "/assets/images/languages/indonesian.png"
+      }
     ]
   },
   "experienceData": {
@@ -42,6 +51,110 @@
       }
     ]
   },
+  "techStackData": {
+    "techs": [
+      {
+        "name": "CSS",
+        "imgUrl": "/assets/images/tech/css.svg",
+        "link": "https://en.wikipedia.org/wiki/CSS"
+      },
+      {
+        "name": "HTML",
+        "imgUrl": "/assets/images/tech/html.svg",
+        "link": "https://en.wikipedia.org/wiki/HTML"
+      },
+      {
+        "name": "SASS",
+        "imgUrl": "/assets/images/tech/sass.svg",
+        "link": "https://sass-lang.com/"
+      },
+      {
+        "name": "Angular",
+        "imgUrl": "/assets/images/tech/angular.svg",
+        "link": "https://angular.dev/"
+      },
+      {
+        "name": "Typescript",
+        "imgUrl": "/assets/images/tech/typescript.svg",
+        "link": "https://www.typescriptlang.org/"
+      },
+      {
+        "name": "RxJS",
+        "imgUrl": "/assets/images/tech/rxjs.svg",
+        "link": "https://rxjs.dev/"
+      },
+      {
+        "name": "Bootstrap",
+        "imgUrl": "/assets/images/tech/bootstrap.svg",
+        "link": "https://getbootstrap.com/"
+      },
+      {
+        "name": "PrimeNG",
+        "imgUrl": "/assets/images/tech/primeng.svg",
+        "link": "https://primeng.org/"
+      },
+      {
+        "name": "Jasmine",
+        "imgUrl": "/assets/images/tech/jasmine.svg",
+        "link": "https://jasmine.github.io/"
+      },
+      {
+        "name": "Karma",
+        "imgUrl": "/assets/images/tech/karma.svg",
+        "link": "https://github.com/karma-runner/karma"
+      },
+      {
+        "name": "Angular Material",
+        "imgUrl": "/assets/images/tech/angular material.svg",
+        "link": "https://material.angular.io/"
+      },
+      {
+        "name": "Ionic",
+        "imgUrl": "/assets/images/tech/ionic.svg",
+        "link": "https://ionicframework.com/"
+      },
+      {
+        "name": "MongoDB",
+        "imgUrl": "/assets/images/tech/mongodb.svg",
+        "link": "https://www.mongodb.com/"
+      },
+      {
+        "name": "Parse",
+        "imgUrl": "/assets/images/tech/parse.svg",
+        "link": "https://parseplatform.org/"
+      },
+      {
+        "name": "Docker",
+        "imgUrl": "/assets/images/tech/docker.svg",
+        "link": "https://www.docker.com/"
+      },
+      {
+        "name": "Javascript",
+        "imgUrl": "/assets/images/tech/javascript.svg",
+        "link": "https://en.wikipedia.org/wiki/JavaScript"
+      },
+      {
+        "name": "React",
+        "imgUrl": "/assets/images/tech/react.svg",
+        "link": "https://react.dev/"
+      },
+      {
+        "name": "Redux",
+        "imgUrl": "/assets/images/tech/redux.svg",
+        "link": "https://redux.js.org/"
+      },
+      {
+        "name": "Firebase",
+        "imgUrl": "/assets/images/tech/firebase.svg",
+        "link": "https://firebase.google.com/"
+      },
+      {
+        "name": "Python",
+        "imgUrl": "/assets/images/tech/python.svg",
+        "link": "https://www.python.org/"
+      }
+    ]
+  },
   "projectData": {
     "projects": [
       {
@@ -53,7 +166,14 @@
           "Created website app for Makati Medical Society with member information and messaging tools.",
           "Utilized JSX, CSS, ReactJS, ReduxJS, and Firebase as Front-End Developer."
         ],
-        "techStack": ["CSS", "Bootstrap", "Javascript", "React", "Redux", "Firebase"],
+        "techStack": [
+          "CSS",
+          "Bootstrap",
+          "Javascript",
+          "React",
+          "Redux",
+          "Firebase"
+        ],
         "link": null,
         "logo": "/assets/images/projects/mkms/logo.png",
         "images": [
@@ -73,7 +193,15 @@
           "Utilized HTML5, SASS, AngularJS, Python, and MongoDB for responsive UI and seamless functionality.",
           "Upgraded website allowing customers to book cycling classes online, with admin web app for content management."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Javascript", "Angular", "Python", "MongoDB"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Javascript",
+          "Angular",
+          "Python",
+          "MongoDB"
+        ],
         "link": "https://www.electricstudio.ph/",
         "logo": "/assets/images/projects/es-web/logo.png",
         "images": [
@@ -93,7 +221,20 @@
           "Project owned by UNDP and partnered with government agencies for transparency and citizen participation.",
           "Utilized HTML5, SASS, Angular 5, Ionic 3, Parse Server, and MongoDB for user-friendly platform promoting effective project management and transparency."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "Typescript", "Angular", "Angular Material", "Ionic", "RxJS", "Parse", "MongoDB", "Docker"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Bootstrap",
+          "Typescript",
+          "Angular",
+          "Angular Material",
+          "Ionic",
+          "RxJS",
+          "Parse",
+          "MongoDB",
+          "Docker"
+        ],
         "link": "https://apkpure.com/devlive/org.devlive.app",
         "logo": "/assets/images/projects/devlive/logo.png",
         "images": [
@@ -116,7 +257,14 @@
           "Updated framework and implemented new API for improved performance and user experience.",
           "Allowing Customers to conveniently book and manage indoor cycling classes on their iPhones, streamlining class reservations."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Javascript", "Angular", "Ionic"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Javascript",
+          "Angular",
+          "Ionic"
+        ],
         "link": "https://apps.apple.com/ph/app/electric-studio-ph/id1391470075",
         "logo": "/assets/images/projects/es-mobile/logo.png",
         "images": [
@@ -136,7 +284,16 @@
           "The outcome was an efficient and user-friendly system, facilitating smooth management of partners, cards, users, and inventory.",
           "I utilized HTML5, SASS, and Angular 7 to create a responsive interface, ensuring an enhanced user experience."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "Angular Material", "Typescript", "Angular", "RxJS"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Bootstrap",
+          "Angular Material",
+          "Typescript",
+          "Angular",
+          "RxJS"
+        ],
         "link": "https://gifmo.cards/",
         "logo": "/assets/images/projects/gifmo/logo.jpg",
         "images": [
@@ -155,7 +312,16 @@
           "The result was a more efficient system for class reservations and an admin web application to manage website content effectively.",
           "I ensured a responsive and user-friendly interface, utilizing HTML5, SASS, Ionic, and Angular."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "Typescript", "Angular", "Ionic", "RxJS"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Bootstrap",
+          "Typescript",
+          "Angular",
+          "Ionic",
+          "RxJS"
+        ],
         "link": "https://ondemand.electricstudio.ph/",
         "logo": "/assets/images/projects/es-rewrite/logo.png",
         "images": [
@@ -173,7 +339,18 @@
           "As a Front-End Developer, I maintained and enhanced a website application that provided translation and foreign filing services for intellectual property, utilizing HTML5, SASS, Angular 7, Jasmine, and Karma to ensure a user-friendly interface.",
           "My tasks included developing new features for each version, enabling effective project/task management, and facilitating communication for all users."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Typescript", "Angular", "RxJS", "Jasmine", "Karma"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Bootstrap",
+          "PrimeNG",
+          "Typescript",
+          "Angular",
+          "RxJS",
+          "Jasmine",
+          "Karma"
+        ],
         "link": "https://sunip.com/",
         "logo": "/assets/images/projects/sunip/logo.png",
         "images": [
@@ -192,7 +369,18 @@
           "I utilized HTML5, SASS, Angular 7, Jasmine, and Karma to ensure a user-friendly interface.",
           "My tasks included developing new features for each version, offering effective project/task management, and communication tools for users."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Typescript", "Angular", "RxJS", "Jasmine", "Karma"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Bootstrap",
+          "PrimeNG",
+          "Typescript",
+          "Angular",
+          "RxJS",
+          "Jasmine",
+          "Karma"
+        ],
         "link": "https://parkeval.com/",
         "logo": "/assets/images/projects/parkeval/logo.png",
         "images": [
@@ -212,7 +400,18 @@
           "I ensured a responsive and user-friendly interface using HTML5, SASS, Angular 7, Jasmine, and Karma.",
           "Additionally, I developed new features for future versions, enhancing the application's capabilities and improving the overall user experience."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Bootstrap", "PrimeNG", "Typescript", "Angular", "RxJS", "Jasmine", "Karma"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Bootstrap",
+          "PrimeNG",
+          "Typescript",
+          "Angular",
+          "RxJS",
+          "Jasmine",
+          "Karma"
+        ],
         "link": "https://parkadvertising.com/",
         "logo": "/assets/images/projects/parkads/logo.png",
         "images": [
@@ -232,7 +431,15 @@
           "The suite includes various modules tailored to meet the distinct and intricate needs of the agencies and organizations it serves.",
           "I utilized the Angular 13 framework to create a new temporary feature, ensuring a smooth and seamless presentation by the demo team across different environments in the application."
         ],
-        "techStack": ["HTML", "CSS", "SASS", "Angular Material", "Typescript", "Angular", "RxJS"],
+        "techStack": [
+          "HTML",
+          "CSS",
+          "SASS",
+          "Angular Material",
+          "Typescript",
+          "Angular",
+          "RxJS"
+        ],
         "link": "https://feisystems.com/blue-compass-solutions/",
         "logo": "/assets/images/projects/bluecompass/logo.svg",
         "images": [
@@ -246,25 +453,25 @@
   "contactData": {
     "logo": "/assets/images/fmt.png",
     "contacts": [
-      { 
+      {
         "name": "LinkedIn",
         "link": "https://www.linkedin.com/in/fernan-marco-tipones",
         "img": "/assets/images/contacts/linkedin.svg",
         "isInverted": false
       },
-      { 
+      {
         "name": "Upwork",
         "link": "https://www.upwork.com/freelancers/~01ead46f18db3fc60e",
         "img": "/assets/images/contacts/upwork.svg",
         "isInverted": false
       },
-      { 
+      {
         "name": "Github",
         "link": "https://github.com/fernanmarcotipones",
         "img": "/assets/images/contacts/github.svg",
         "isInverted": true
       },
-      { 
+      {
         "name": "Gmail",
         "link": "mailto:fernanmarcotipones@gmail.com",
         "img": "/assets/images/contacts/gmail.svg",
