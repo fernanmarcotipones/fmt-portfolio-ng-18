@@ -45,10 +45,10 @@
           {{project()?.endDate ? (project()?.endDate | date: 'MMMM yyyy') : 'Present'}}
         </h4>
       </div>
-      <div class="techs px-2 center">
-        <div class="row g-0">
+      <div class="techs px-2">
+        <div class="row g-0 center-y h-100">
           @for (tech of project()?.techStack; track tech;) {
-            <div class="col-md-3 center">
+            <div class="col-md-3 center" [matTooltip]="tech" matTooltipPosition="above">
               <img [src]="getTechImgUrl(tech)" alt="Tech Image {{ $index }}" class="w-75">
             </div>
           }

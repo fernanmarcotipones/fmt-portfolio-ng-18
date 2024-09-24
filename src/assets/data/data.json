@@ -458,24 +458,28 @@
     "contacts": [
       {
         "name": "LinkedIn",
+        "message": "Follow me on LinkedIn",
         "link": "https://www.linkedin.com/in/fernan-marco-tipones",
         "img": "/assets/images/contacts/linkedin.svg",
         "isInverted": false
       },
       {
         "name": "Upwork",
+        "message": "Find me on Upwork",
         "link": "https://www.upwork.com/freelancers/~01ead46f18db3fc60e",
         "img": "/assets/images/contacts/upwork.svg",
         "isInverted": false
       },
       {
         "name": "Github",
+        "message": "Check out my Github",
         "link": "https://github.com/fernanmarcotipones",
         "img": "/assets/images/contacts/github.svg",
         "isInverted": true
       },
       {
         "name": "Gmail",
+        "message": "Send me an email",
         "link": "mailto:fernanmarcotipones@gmail.com",
         "img": "/assets/images/contacts/gmail.svg",
         "isInverted": false

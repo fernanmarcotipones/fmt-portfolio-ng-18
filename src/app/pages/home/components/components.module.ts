@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { BannerComponent } from './banner/banner.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -26,6 +28,7 @@ import { ProfileService } from '../../../services/profile.service';
     MatButtonToggleModule,
     MatMenuModule,
     MatCheckboxModule,
+    MatTooltipModule,
   ],
   declarations: [
     BannerComponent,
