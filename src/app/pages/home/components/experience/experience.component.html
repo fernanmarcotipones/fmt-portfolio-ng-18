@@ -2,7 +2,7 @@
   <div class="container py-3">
     <div class="row center-y">
     @for (experience of data()?.experiences; track experience.title) {
-      <div class="col-md-4">
+      <div class="experience col-md-4" (click)="openLink(experience?.companyLink)">
         <div class="row center-y">
           <div class="col-md-3">
             <img [src]="experience?.companyImgUrl" alt="Company Image">

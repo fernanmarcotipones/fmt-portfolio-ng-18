@@ -7,4 +7,8 @@ import { Component, input } from '@angular/core';
 })
 export class ExperienceComponent {
   data = input<any>(null);
+  
+  openLink(link: string): void {
+    window.open(link, "_blank");
+  }
 }
