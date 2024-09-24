@@ -33,6 +33,6 @@ export class ProjectModalComponent {
   }
 
   getTechImgUrl(techName: string): string {
-    return `/assets/images/tech/${techName.toLocaleLowerCase()}.svg`
+    return `assets/images/tech/${techName.toLocaleLowerCase()}.svg`
   }
 }

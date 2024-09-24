@@ -3,23 +3,23 @@
     "firstName": "Fernan Marco Adriansyah",
     "lastName": "Tipones",
     "position": "Front-end Developer",
-    "bannerImgUrl": "/assets/images/fmt.png"
+    "bannerImgUrl": "assets/images/fmt.png"
   },
   "profileData": {
-    "profileImgUrl": "/assets/images/fmt-profile.jpg",
+    "profileImgUrl": "assets/images/fmt-profile.jpg",
     "description": "I’m a Front-end Developer with nearly 8 years of experience, working regularly with product team and back-end developers. I’m proficient in various JavaScript frameworks especially Angular and have a solid background in responsive design for both web and mobile projects. My keen attention to detail and ability to adapt to any project environment help me consistently deliver effective solutions.",
     "languages": [
       {
         "name": "English",
-        "imgUrl": "/assets/images/languages/english.png"
+        "imgUrl": "assets/images/languages/english.png"
       },
       {
         "name": "Filipino",
-        "imgUrl": "/assets/images/languages/filipino.png"
+        "imgUrl": "assets/images/languages/filipino.png"
       },
       {
         "name": "Indonesian",
-        "imgUrl": "/assets/images/languages/indonesian.png"
+        "imgUrl": "assets/images/languages/indonesian.png"
       }
     ]
   },
@@ -31,7 +31,7 @@
         "startDate": "2022-09-01T00:00:00.000Z",
         "endDate": null,
         "isCurrentCompany": true,
-        "companyImgUrl": "/assets/images/companies/feisystems.jpeg",
+        "companyImgUrl": "assets/images/companies/feisystems.jpeg",
         "companyLink": "https://feisystems.com/"
       },
       {
@@ -40,7 +40,7 @@
         "startDate": "2020-03-01T00:00:00.000Z",
         "endDate": "2022-08-31T00:00:00.000Z",
         "isCurrentCompany": false,
-        "companyImgUrl": "/assets/images/companies/legalsight.jpeg",
+        "companyImgUrl": "assets/images/companies/legalsight.jpeg",
         "companyLink": "https://legalsight.com/"
       },
       {
@@ -49,7 +49,7 @@
         "startDate": "2017-02-01T00:00:00.000Z",
         "endDate": "2020-03-31T00:00:00.000Z",
         "isCurrentCompany": false,
-        "companyImgUrl": "/assets/images/companies/98labs.jpeg",
+        "companyImgUrl": "assets/images/companies/98labs.jpeg",
         "companyLink": "https://98labs.com/"
       }
     ]
@@ -58,102 +58,102 @@
     "techs": [
       {
         "name": "CSS",
-        "imgUrl": "/assets/images/tech/css.svg",
+        "imgUrl": "assets/images/tech/css.svg",
         "link": "https://en.wikipedia.org/wiki/CSS"
       },
       {
         "name": "HTML",
-        "imgUrl": "/assets/images/tech/html.svg",
+        "imgUrl": "assets/images/tech/html.svg",
         "link": "https://en.wikipedia.org/wiki/HTML"
       },
       {
         "name": "SASS",
-        "imgUrl": "/assets/images/tech/sass.svg",
+        "imgUrl": "assets/images/tech/sass.svg",
         "link": "https://sass-lang.com/"
       },
       {
         "name": "Angular",
-        "imgUrl": "/assets/images/tech/angular.svg",
+        "imgUrl": "assets/images/tech/angular.svg",
         "link": "https://angular.dev/"
       },
       {
         "name": "Typescript",
-        "imgUrl": "/assets/images/tech/typescript.svg",
+        "imgUrl": "assets/images/tech/typescript.svg",
         "link": "https://www.typescriptlang.org/"
       },
       {
         "name": "RxJS",
-        "imgUrl": "/assets/images/tech/rxjs.svg",
+        "imgUrl": "assets/images/tech/rxjs.svg",
         "link": "https://rxjs.dev/"
       },
       {
         "name": "Bootstrap",
-        "imgUrl": "/assets/images/tech/bootstrap.svg",
+        "imgUrl": "assets/images/tech/bootstrap.svg",
         "link": "https://getbootstrap.com/"
       },
       {
         "name": "PrimeNG",
-        "imgUrl": "/assets/images/tech/primeng.svg",
+        "imgUrl": "assets/images/tech/primeng.svg",
         "link": "https://primeng.org/"
       },
       {
         "name": "Jasmine",
-        "imgUrl": "/assets/images/tech/jasmine.svg",
+        "imgUrl": "assets/images/tech/jasmine.svg",
         "link": "https://jasmine.github.io/"
       },
       {
         "name": "Karma",
-        "imgUrl": "/assets/images/tech/karma.svg",
+        "imgUrl": "assets/images/tech/karma.svg",
         "link": "https://github.com/karma-runner/karma"
       },
       {
         "name": "Angular Material",
-        "imgUrl": "/assets/images/tech/angular material.svg",
+        "imgUrl": "assets/images/tech/angular material.svg",
         "link": "https://material.angular.io/"
       },
       {
         "name": "Ionic",
-        "imgUrl": "/assets/images/tech/ionic.svg",
+        "imgUrl": "assets/images/tech/ionic.svg",
         "link": "https://ionicframework.com/"
       },
       {
         "name": "MongoDB",
-        "imgUrl": "/assets/images/tech/mongodb.svg",
+        "imgUrl": "assets/images/tech/mongodb.svg",
         "link": "https://www.mongodb.com/"
       },
       {
         "name": "Parse",
-        "imgUrl": "/assets/images/tech/parse.svg",
+        "imgUrl": "assets/images/tech/parse.svg",
         "link": "https://parseplatform.org/"
       },
       {
         "name": "Docker",
-        "imgUrl": "/assets/images/tech/docker.svg",
+        "imgUrl": "assets/images/tech/docker.svg",
         "link": "https://www.docker.com/"
       },
       {
         "name": "Javascript",
-        "imgUrl": "/assets/images/tech/javascript.svg",
+        "imgUrl": "assets/images/tech/javascript.svg",
         "link": "https://en.wikipedia.org/wiki/JavaScript"
       },
       {
         "name": "React",
-        "imgUrl": "/assets/images/tech/react.svg",
+        "imgUrl": "assets/images/tech/react.svg",
         "link": "https://react.dev/"
       },
       {
         "name": "Redux",
-        "imgUrl": "/assets/images/tech/redux.svg",
+        "imgUrl": "assets/images/tech/redux.svg",
         "link": "https://redux.js.org/"
       },
       {
         "name": "Firebase",
-        "imgUrl": "/assets/images/tech/firebase.svg",
+        "imgUrl": "assets/images/tech/firebase.svg",
         "link": "https://firebase.google.com/"
       },
       {
         "name": "Python",
-        "imgUrl": "/assets/images/tech/python.svg",
+        "imgUrl": "assets/images/tech/python.svg",
         "link": "https://www.python.org/"
       }
     ]
@@ -178,11 +178,11 @@
           "Firebase"
         ],
         "link": null,
-        "logo": "/assets/images/projects/mkms/logo.png",
+        "logo": "assets/images/projects/mkms/logo.png",
         "images": [
-          "/assets/images/projects/mkms/1.png",
-          "/assets/images/projects/mkms/2.png",
-          "/assets/images/projects/mkms/3.png"
+          "assets/images/projects/mkms/1.png",
+          "assets/images/projects/mkms/2.png",
+          "assets/images/projects/mkms/3.png"
         ]
       },
       {
@@ -206,11 +206,11 @@
           "MongoDB"
         ],
         "link": "https://www.electricstudio.ph/",
-        "logo": "/assets/images/projects/es-web/logo.png",
+        "logo": "assets/images/projects/es-web/logo.png",
         "images": [
-          "/assets/images/projects/es-web/1.png",
-          "/assets/images/projects/es-web/2.png",
-          "/assets/images/projects/es-web/3.png"
+          "assets/images/projects/es-web/1.png",
+          "assets/images/projects/es-web/2.png",
+          "assets/images/projects/es-web/3.png"
         ]
       },
       {
@@ -239,15 +239,15 @@
           "Docker"
         ],
         "link": "https://apkpure.com/devlive/org.devlive.app",
-        "logo": "/assets/images/projects/devlive/logo.png",
+        "logo": "assets/images/projects/devlive/logo.png",
         "images": [
-          "/assets/images/projects/devlive/1.png",
-          "/assets/images/projects/devlive/2.png",
-          "/assets/images/projects/devlive/3.png",
-          "/assets/images/projects/devlive/4.png",
-          "/assets/images/projects/devlive/5.png",
-          "/assets/images/projects/devlive/6.png",
-          "/assets/images/projects/devlive/7.png"
+          "assets/images/projects/devlive/1.png",
+          "assets/images/projects/devlive/2.png",
+          "assets/images/projects/devlive/3.png",
+          "assets/images/projects/devlive/4.png",
+          "assets/images/projects/devlive/5.png",
+          "assets/images/projects/devlive/6.png",
+          "assets/images/projects/devlive/7.png"
         ]
       },
       {
@@ -269,11 +269,11 @@
           "Ionic"
         ],
         "link": "https://apps.apple.com/ph/app/electric-studio-ph/id1391470075",
-        "logo": "/assets/images/projects/es-mobile/logo.png",
+        "logo": "assets/images/projects/es-mobile/logo.png",
         "images": [
-          "/assets/images/projects/es-mobile/1.png",
-          "/assets/images/projects/es-mobile/2.png",
-          "/assets/images/projects/es-mobile/3.png"
+          "assets/images/projects/es-mobile/1.png",
+          "assets/images/projects/es-mobile/2.png",
+          "assets/images/projects/es-mobile/3.png"
         ]
       },
       {
@@ -298,11 +298,11 @@
           "RxJS"
         ],
         "link": "https://gifmo.cards/",
-        "logo": "/assets/images/projects/gifmo/logo.jpg",
+        "logo": "assets/images/projects/gifmo/logo.jpg",
         "images": [
-          "/assets/images/projects/gifmo/1.png",
-          "/assets/images/projects/gifmo/2.png",
-          "/assets/images/projects/gifmo/3.png"
+          "assets/images/projects/gifmo/1.png",
+          "assets/images/projects/gifmo/2.png",
+          "assets/images/projects/gifmo/3.png"
         ]
       },
       {
@@ -326,11 +326,11 @@
           "RxJS"
         ],
         "link": "https://ondemand.electricstudio.ph/",
-        "logo": "/assets/images/projects/es-rewrite/logo.png",
+        "logo": "assets/images/projects/es-rewrite/logo.png",
         "images": [
-          "/assets/images/projects/es-rewrite/1.png",
-          "/assets/images/projects/es-rewrite/2.png",
-          "/assets/images/projects/es-rewrite/3.png"
+          "assets/images/projects/es-rewrite/1.png",
+          "assets/images/projects/es-rewrite/2.png",
+          "assets/images/projects/es-rewrite/3.png"
         ]
       },
       {
@@ -355,11 +355,11 @@
           "Karma"
         ],
         "link": "https://sunip.com/",
-        "logo": "/assets/images/projects/sunip/logo.png",
+        "logo": "assets/images/projects/sunip/logo.png",
         "images": [
-          "/assets/images/projects/sunip/1.png",
-          "/assets/images/projects/sunip/2.png",
-          "/assets/images/projects/sunip/3.png"
+          "assets/images/projects/sunip/1.png",
+          "assets/images/projects/sunip/2.png",
+          "assets/images/projects/sunip/3.png"
         ]
       },
       {
@@ -385,11 +385,11 @@
           "Karma"
         ],
         "link": "https://parkeval.com/",
-        "logo": "/assets/images/projects/parkeval/logo.png",
+        "logo": "assets/images/projects/parkeval/logo.png",
         "images": [
-          "/assets/images/projects/parkeval/1.png",
-          "/assets/images/projects/parkeval/2.png",
-          "/assets/images/projects/parkeval/3.png"
+          "assets/images/projects/parkeval/1.png",
+          "assets/images/projects/parkeval/2.png",
+          "assets/images/projects/parkeval/3.png"
         ]
       },
       {
@@ -416,11 +416,11 @@
           "Karma"
         ],
         "link": "https://parkadvertising.com/",
-        "logo": "/assets/images/projects/parkads/logo.png",
+        "logo": "assets/images/projects/parkads/logo.png",
         "images": [
-          "/assets/images/projects/parkads/1.png",
-          "/assets/images/projects/parkads/2.png",
-          "/assets/images/projects/parkads/3.png"
+          "assets/images/projects/parkads/1.png",
+          "assets/images/projects/parkads/2.png",
+          "assets/images/projects/parkads/3.png"
         ]
       },
       {
@@ -444,44 +444,44 @@
           "RxJS"
         ],
         "link": "https://feisystems.com/blue-compass-solutions/",
-        "logo": "/assets/images/projects/bluecompass/logo.svg",
+        "logo": "assets/images/projects/bluecompass/logo.svg",
         "images": [
-          "/assets/images/projects/bluecompass/1.png",
-          "/assets/images/projects/bluecompass/2.png",
-          "/assets/images/projects/bluecompass/3.png"
+          "assets/images/projects/bluecompass/1.png",
+          "assets/images/projects/bluecompass/2.png",
+          "assets/images/projects/bluecompass/3.png"
         ]
       }
     ]
   },
   "contactData": {
-    "logo": "/assets/images/fmt.png",
+    "logo": "assets/images/fmt.png",
     "contacts": [
       {
         "name": "LinkedIn",
         "message": "Follow me on LinkedIn",
         "link": "https://www.linkedin.com/in/fernan-marco-tipones",
-        "img": "/assets/images/contacts/linkedin.svg",
+        "img": "assets/images/contacts/linkedin.svg",
         "isInverted": false
       },
       {
         "name": "Upwork",
         "message": "Find me on Upwork",
         "link": "https://www.upwork.com/freelancers/~01ead46f18db3fc60e",
-        "img": "/assets/images/contacts/upwork.svg",
+        "img": "assets/images/contacts/upwork.svg",
         "isInverted": false
       },
       {
         "name": "Github",
         "message": "Check out my Github",
         "link": "https://github.com/fernanmarcotipones",
-        "img": "/assets/images/contacts/github.svg",
+        "img": "assets/images/contacts/github.svg",
         "isInverted": true
       },
       {
         "name": "Gmail",
         "message": "Send me an email",
         "link": "mailto:fernanmarcotipones@gmail.com",
-        "img": "/assets/images/contacts/gmail.svg",
+        "img": "assets/images/contacts/gmail.svg",
         "isInverted": false
       }
     ]

@@ -54,7 +54,7 @@ export class ProfileService {
         const techObj: any = {
           name: techName,
           dayUsed: projectTechs[techName],
-          imgUrl: `/assets/images/tech/${techName.toLocaleLowerCase()}.svg`,
+          imgUrl: `assets/images/tech/${techName.toLocaleLowerCase()}.svg`,
           link: `https://www.google.com/search?q=${techName}`
         }
         techData.techs.push(techObj);
