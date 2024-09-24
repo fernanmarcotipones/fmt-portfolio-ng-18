@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 import { BannerComponent } from './banner/banner.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -11,8 +16,6 @@ import { TechStackComponent } from './tech-stack/tech-stack.component';
 import { ContactComponent } from './contact/contact.component';
 
 import { ProfileService } from '../../../services/profile.service';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
@@ -20,6 +23,9 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     MatDialogModule,
     MatIconModule,
+    MatButtonToggleModule,
+    MatMenuModule,
+    MatCheckboxModule,
   ],
   declarations: [
     BannerComponent,

@@ -63,7 +63,6 @@ export class ProjectsComponent {
   }
 
   openProjectModal(project: any): void {
-    console.log('project', project);
     this.matDialog.open(ProjectModalComponent, {
       width: '80vw',
       height: '80vh',

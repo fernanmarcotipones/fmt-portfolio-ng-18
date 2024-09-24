@@ -3,10 +3,10 @@
     <div class="content py-3">
       <div class="actions mb-3">
         <div class="row align-items-center">
-          <div class="search col-md-3">
-            <input type="text" class="form-control" placeholder="Search Project" [(ngModel)]="searchText">
+          <div class="search col-md-6">
+            <input type="text" class="form-control w-50" placeholder="Search Project" [(ngModel)]="searchText">
           </div>
-          <div class="filter col-md-9 center-y overflow-x-auto">
+          <!-- <div class="filter col-md-9 center-y overflow-x-auto">
             <button 
               class="btn btn-sm mx-1 center"
               (click)="clearFilter()"
@@ -21,6 +21,31 @@
                 {{ tech?.name !== 'Angular Material' ? tech?.name : 'Material' }}
               </button>
             }
+          </div> -->
+          <div class="filter col-md-6 center-y justify-content-end">
+            <mat-menu #filter="matMenu" class="project-filters">
+              <div class="row g-0 center-y flex-wrap" style="width: 400px">
+                <div class="col-md-4">
+                  <mat-checkbox 
+                    (change)="clearFilter()"
+                    (click)="$event.stopPropagation()"
+                    [checked]="!filters().length">
+                    All
+                  </mat-checkbox>
+                </div>
+                @for (tech of techs(); track tech.name) {
+                  <div class="col-md-4">
+                    <mat-checkbox
+                      (change)="toggleFilter(tech.name)"
+                      (click)="$event.stopPropagation()"
+                      [checked]="filters().includes(tech.name)">
+                      {{ tech?.name !== 'Angular Material' ? tech?.name : 'Material' }}
+                    </mat-checkbox>
+                  </div>
+                }
+              </div>
+            </mat-menu>
+            <mat-button-toggle mat-flat-button value="filter" [matMenuTriggerFor]="filter">Filter</mat-button-toggle>
           </div>
         </div>
       </div>
@@ -39,7 +64,3 @@
     </div>
   </div>
 </div>
-
-<ng-template #modalTemplate>
-  <div>This is a modal</div>
-</ng-template>

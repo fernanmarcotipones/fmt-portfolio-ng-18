@@ -17,6 +17,18 @@
 
     .actions {
       flex: 1;
+
+      .filter {
+        .items {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          mat-checkbox {
+            width: 120px;
+          }
+        }
+      }
     }
 
     .project-list {
