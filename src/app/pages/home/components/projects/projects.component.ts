@@ -55,8 +55,9 @@ export class ProjectsComponent {
     if (searchText) {
       const searchTextLowerCase: string = searchText.toLowerCase();
       const isTitleMatched: boolean = project.title.toLowerCase().includes(searchTextLowerCase);
+      const isCompanyMatched: boolean = project.company.toLowerCase().includes(searchTextLowerCase);
       const isTechMatched: boolean = project.techStack.some((tech: string) => tech.toLowerCase().includes(searchTextLowerCase));
-      isSearchMatched = isTitleMatched || isTechMatched;
+      isSearchMatched = isTitleMatched || isCompanyMatched || isTechMatched;
     }
 
     return isSearchMatched && isFilterMatched;

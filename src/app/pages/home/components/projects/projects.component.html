@@ -4,24 +4,12 @@
       <div class="actions mb-3">
         <div class="row align-items-center">
           <div class="search col-md-6">
-            <input type="text" class="form-control w-50" placeholder="Search Project" [(ngModel)]="searchText">
+            <input 
+              type="text"
+              class="form-control w-75"
+              placeholder="Search Project by Name, Tech or Company" 
+              [(ngModel)]="searchText">
           </div>
-          <!-- <div class="filter col-md-9 center-y overflow-x-auto">
-            <button 
-              class="btn btn-sm mx-1 center"
-              (click)="clearFilter()"
-              [ngClass]="!filters().length ? 'btn-primary' : 'btn-secondary'">
-                All
-            </button>
-            @for (tech of techs(); track tech.name) {
-              <button 
-                class="btn btn-sm mx-1 center"
-                (click)="toggleFilter(tech.name)"
-                [ngClass]="filters().includes(tech.name) ? 'btn-primary' : 'btn-secondary'">
-                {{ tech?.name !== 'Angular Material' ? tech?.name : 'Material' }}
-              </button>
-            }
-          </div> -->
           <div class="filter col-md-6 center-y justify-content-end">
             <mat-menu #filter="matMenu" class="project-filters">
               <div class="row g-0 center-y flex-wrap" style="width: 400px">
