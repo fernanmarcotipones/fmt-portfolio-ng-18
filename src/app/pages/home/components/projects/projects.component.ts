@@ -9,8 +9,8 @@ import { ProjectModalComponent } from './project-modal/project-modal.component';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-  private profileService = inject(ProfileService);
   private matDialog = inject(MatDialog);
+  profileService = inject(ProfileService);
 
   data = input<any>(null);
   searchText = signal<string>('');

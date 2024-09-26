@@ -1,5 +1,6 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
+import { ProfileService } from '../../../../../services/profile.service';
 
 @Component({
   selector: 'fmt-project-modal',
@@ -9,6 +10,7 @@ import { MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 export class ProjectModalComponent {
   private matDialog = inject(MatDialog);
   private data = inject(MAT_DIALOG_DATA);
+  profileService = inject(ProfileService);
   
   project = signal<any>(this.data?.project);
   imagesLength = computed(() => this.project().images.length);
@@ -30,9 +32,5 @@ export class ProjectModalComponent {
 
   close() {
     this.matDialog.closeAll();
-  }
-
-  getTechImgUrl(techName: string): string {
-    return `assets/images/tech/${techName.toLocaleLowerCase()}.svg`
   }
 }

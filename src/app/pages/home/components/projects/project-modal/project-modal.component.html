@@ -49,7 +49,7 @@
         <div class="row g-0 center-y h-100">
           @for (tech of project()?.techStack; track tech;) {
             <div class="col-md-3 center" [matTooltip]="tech" matTooltipPosition="above">
-              <img [src]="getTechImgUrl(tech)" alt="Tech Image {{ $index }}" class="w-75">
+              <img [src]="profileService.getTechImgUrl(tech)" alt="Tech Image {{ $index }}" class="w-75">
             </div>
           }
         </div>

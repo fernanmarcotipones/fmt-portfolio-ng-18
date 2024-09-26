@@ -54,7 +54,7 @@ export class ProfileService {
         const techObj: any = {
           name: techName,
           dayUsed: projectTechs[techName],
-          imgUrl: `assets/images/tech/${techName.toLocaleLowerCase()}.svg`,
+          imgUrl: this.getTechImgUrl(techName),
           link: `https://www.google.com/search?q=${techName}`
         }
         techData.techs.push(techObj);
@@ -63,5 +63,9 @@ export class ProfileService {
 
     techData.techs.sort((a: any, b: any) => b.dayUsed - a.dayUsed);
     return techData;
+  }
+
+  getTechImgUrl(techName: string): string {
+    return `assets/images/tech/${techName.toLocaleLowerCase()}.svg`
   }
 }

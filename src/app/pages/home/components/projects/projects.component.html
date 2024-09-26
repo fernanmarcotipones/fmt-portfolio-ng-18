@@ -3,14 +3,14 @@
     <div class="content py-3">
       <div class="actions mb-3">
         <div class="row align-items-center">
-          <div class="search col-md-6">
+          <div class="search col-9 col-md-6">
             <input 
               type="text"
-              class="form-control w-75"
+              class="form-control"
               placeholder="Search Project by Name, Tech or Company" 
               [(ngModel)]="searchText">
           </div>
-          <div class="filter col-md-6 center-y justify-content-end">
+          <div class="filter col-3 col-md-6 center-y justify-content-end">
             <mat-menu #filter="matMenu" class="project-filters">
               <div class="row g-0 center-y flex-wrap" style="width: 400px">
                 <div class="col-md-4">
@@ -40,13 +40,21 @@
       <div class="project-list row flex-wrap">
         @for (project of projects(); track project.title) {
           <div class="project col-md-6 text-center mb-3" (click)="openProjectModal(project)">
-            <div class="project-img center">
-              <img [src]="project?.images[0]" alt="Project Image">
-              <h5 class="mt-2">{{project?.title}}</h5>
+            <div class="project-content center">
+              <img class="project-bg img-fluid" [src]="project?.images[0]" alt="Project Image">
+              <div class="overlay"></div>
+              <div class="techs center-y justify-content-around px-2 py-1">
+                @for (tech of project?.techStack; track tech;) {
+                  <img class="img-fluid" [src]="profileService.getTechImgUrl(tech)" alt="Tech Image {{ $index }}">
+                }
+              </div>
+              <div class="title center">
+                <span>{{project?.title}}</span>
+              </div>
             </div>
           </div>
         } @empty {
-          <div class="col-12 h-100 center">No projects found</div>
+          <div class="col-12 center no-result">No project found</div>
         }
       </div>
     </div>

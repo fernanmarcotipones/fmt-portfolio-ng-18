@@ -1,5 +1,6 @@
 .projects {
   min-height: 100vh;
+  overflow: hidden;
 
   .container,
   .content,
@@ -7,16 +8,23 @@
     height: inherit;
   }
 
-  .row {
-    width: 100%;
-  }
-
   .content {
     display: flex;
     flex-direction: column;
+    font-family: "Teko", sans-serif;
 
     .actions {
       flex: 1;
+
+      .search {
+        input {
+          width: 100%;
+
+          @media (min-width: 992px) {
+            width: 75%;
+          }
+        }
+      }
 
       .filter {
         .items {
@@ -37,45 +45,141 @@
       .project {
         cursor: pointer;
 
-        &:hover {
-          .project-img {
-            border: 1px solid black;
+        * {
+          transition: all 0.3s ease-in-out;
+        }
 
-            img {
+        &:hover {
+          .project-content {
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+
+            .project-bg {
               transform: scale(1.1);
             }
 
-            h5 {
+            .techs,
+            .title,
+            .overlay {
               opacity: 1;
+            }
+
+            .techs {
+              width: 80%;
+            }
+
+            .title {
+              width: 80%;
+              
+              span {
+                opacity: 1;
+                font-size: 1.2rem;
+  
+                @media (min-width: 768px) {
+                  font-size: 1rem;
+                }
+      
+                @media (min-width: 992px) {
+                  font-size: 1.3rem;
+                }
+      
+                @media (min-width: 1200px) {
+                  font-size: 1.5rem;
+                }
+              }
             }
           }
         }
 
-        .project-img {
-          height: 40vh;
+        .project-content {
+          height: 250px;
           width: 100%;
           overflow: hidden;
           border: 1px solid transparent;
           border-radius: 10px;
           position: relative;
+          box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+          -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+          -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
 
-          img {
+          @media (min-width: 992px) {
+            height: 300px;
+          }
+
+          @media (min-width: 1200px) {
+            height: 350px;
+          }
+
+          @media (min-width: 1400px) {
+            height: 400px;
+          }
+
+          .project-bg {
             width: 100%;
             min-height: 100%;
-            transition: all 0.3s ease;
           }
 
-          h5 {
+          .overlay,
+          .techs,
+          .title {
             position: absolute;
-            bottom: 0;
-            margin: 0;
-            width: 100%;
-            background: rgba(255,255,255,1);
-            border-top: 1px solid black;
-            transition: all 0.3s ease;
             opacity: 0;
           }
+
+          .overlay {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 150px 15px rgba(0,0,0,0.7) inset;
+            -webkit-box-shadow: 0px 0px 150px 15px rgba(0,0,0,0.7) inset;
+            -moz-box-shadow: 0px 0px 150px 15px rgba(0,0,0,0.7) inset;
+            z-index: 2;
+          }
+
+          .techs,
+          .title {
+            width: 0%;
+            height: 15%;
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid black;
+            z-index: 3;
+  
+            @media (min-width: 768px) {
+              height: 10%;
+            }
+          }
+
+          .techs {
+            top: 20px;
+            right: 0;
+            border-right: none;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            img {
+              height: 80%;
+            }
+          }
+
+          .title {
+            bottom: 20px;
+            left: 0;
+            border-left: none;
+            border-bottom-right-radius: 50px;
+
+            .span {
+              opacity: 0;
+              font-size: 0rem;
+            }
+          }
         }
+      }
+
+      .no-result {
+        height: 100vh;
+        font-size: 2rem;
       }
 
     }
