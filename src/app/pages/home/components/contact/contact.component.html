@@ -1,11 +1,11 @@
 <div class="contact">
   <div class="container">
     <div class="row center-y">
-      <div class="col-md-6 center-y">
+      <div class="col-8 center-y justify-content-start">
         <img [src]="data()?.logo" alt="Footer Logo">
-        <h5 class="mb-0 mx-2">Fernan Marco Tipones © 2024</h5>
+        <h5 class="mb-0 mx-2 d-none d-md-inline">Fernan Marco Tipones © 2024</h5>
       </div>
-      <div class="contacts col-md-6 center-y justify-content-end">
+      <div class="contacts col-4 center-y justify-content-end">
         @for (contact of data()?.contacts; track contact.name) {
           <a [href]="contact?.link" target="_blank" class="mx-2" [matTooltip]="contact?.message" matTooltipPosition="above">
             <img [src]="contact?.img" alt="Contact Link Image" [ngClass]="{'inverted': contact?.isInverted}">
