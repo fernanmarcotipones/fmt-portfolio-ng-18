@@ -1,5 +1,5 @@
 .tech-stack {
-  height: 75vh;
+  min-height: 75vh;
   background-color: black;
   color: white;
 
@@ -10,11 +10,11 @@
   }
 
   .tech-list {
-    flex-direction: column;
     width: 100%;
 
     .tech {
       cursor: pointer;
+      font-family: "Teko", sans-serif;
 
       * {
         transition: all 0.2s ease-in-out;
