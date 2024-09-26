@@ -1,13 +1,16 @@
-<div class="experience">
-  <div class="container py-3">
-    <div class="row center-y">
+<div class="experiences center">
+  <div class="container">
+    <div class="row center-y py-3 py-lg-0">
     @for (experience of data()?.experiences; track experience.title) {
-      <div class="experience col-md-4" (click)="openLink(experience?.companyLink)">
+      <div 
+        class="experience col-md-6 col-lg-4"
+        [ngClass]="{'mb-4 mb-lg-0': $index !== data()?.experiences.length - 1}"
+        (click)="openLink(experience?.companyLink)">
         <div class="row center-y">
-          <div class="col-md-3">
-            <img [src]="experience?.companyImgUrl" alt="Company Image">
+          <div class="col-3">
+            <img class="img-fluid" [src]="experience?.companyImgUrl" alt="Company Image">
           </div>
-          <div class="col-md-9">
+          <div class="col-9">
             <h3>{{experience?.title}}</h3>
             <h4>{{experience?.company}}</h4>
             <h4>

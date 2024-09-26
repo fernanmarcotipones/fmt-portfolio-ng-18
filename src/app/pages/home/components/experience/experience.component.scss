@@ -1,5 +1,5 @@
-.experience {
-  height: 25vh;
+.experiences {
+  min-height: 25vh;
   background-color: black;
   color: white;
 
@@ -15,19 +15,24 @@
 
     .experience {
       cursor: pointer;
+      font-family: "Teko", sans-serif;
 
       * {
         transition: all 0.2s ease-in-out;
       }
 
       img {
-        border-radius: 100%;
         width: 100%;
+        border-radius: 100%;
+        border-style: solid;
+        border-color:#0d6efd;
+        border-width: 0;
       }
 
       &:hover {
         img {
-          transform: scale(1.1);
+          transform: scale(1.2);
+          border-width: 3px;
         }
 
         h3, h4 {
