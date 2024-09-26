@@ -1,20 +1,26 @@
 <div class="profile">
   <div class="container">
     <div class="content">
-      <div class="description row center-y">
-        <div class="col-md-9">
-          <p class="mb-0 px-2 fs-2">{{data()?.description}}</p>
+      <div class="description row center-y flex-row flex-md-row-reverse py-3 py-md-0">
+        <div class="col-md-5 col-lg-4 col-xl-3 mb-3 mb-md-0 align-self-end align-self-md-center center-x">
+          <img class="img-fluid" [src]="data()?.profileImgUrl" alt="Profile Image">
         </div>
-        <div class="col-md-3">
-          <img [src]="data()?.profileImgUrl" alt="Profile Image">
+        <div class="col-md-7 col-lg-7 col-xl-9">
+          <p class="mb-0 px-2 fs-3">{{data()?.description}}</p>
         </div>
       </div>
       @if (data()?.languages.length) {
         <div class="languages row align-items-center justify-content-around">
           @for (language of data()?.languages; track language.name) {
-            <div class="col-md-2 text-center">
-              <img [src]="language?.imgUrl" alt="Language Image">
-              <span class="fs-2">{{language?.name}}</span>
+            <div class="col-3 col-md-2 text-center">
+              <img 
+                class="img-fluid"
+                [src]="language?.imgUrl"
+                alt="Language Image"
+                [matTooltip]="language?.description"
+                [matTooltipClass]="{'language-tooltip': true}"
+                matTooltipPosition="below">
+              <!-- <span class="fs-2">{{language?.name}}</span> -->
             </div>
           }
         </div>

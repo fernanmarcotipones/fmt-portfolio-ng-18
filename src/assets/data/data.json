@@ -11,15 +11,18 @@
     "languages": [
       {
         "name": "English",
-        "imgUrl": "assets/images/languages/english.png"
+        "imgUrl": "assets/images/languages/english.png",
+        "description": "I have professional working proficiency in English."
       },
       {
         "name": "Filipino",
-        "imgUrl": "assets/images/languages/filipino.png"
+        "imgUrl": "assets/images/languages/filipino.png",
+        "description": "I am a native Filipino speaker."
       },
       {
         "name": "Indonesian",
-        "imgUrl": "assets/images/languages/indonesian.png"
+        "imgUrl": "assets/images/languages/indonesian.png",
+        "description": "I speak Indonesian with Limited Working Proficiency."
       }
     ]
   },

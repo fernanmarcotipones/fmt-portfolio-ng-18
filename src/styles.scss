@@ -40,6 +40,8 @@ $fmt-portfolio-ng-18-theme: mat.define-theme((
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap');
 
+html, body { height: 100%; }
+
 *, body {
   padding: 0;
   margin: 0;
@@ -47,6 +49,7 @@ $fmt-portfolio-ng-18-theme: mat.define-theme((
 
 body {
   font-family: 'Lora', serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
@@ -74,9 +77,10 @@ body {
   align-items: center;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 .project-filters.mat-mdc-menu-panel {
   max-width: unset;
+}
+
+.language-tooltip.mat-mdc-tooltip .mat-mdc-tooltip-surface {
+  text-align: center;
 }
