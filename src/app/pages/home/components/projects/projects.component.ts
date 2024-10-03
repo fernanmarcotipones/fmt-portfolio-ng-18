@@ -65,9 +65,12 @@ export class ProjectsComponent {
 
   openProjectModal(project: any): void {
     this.matDialog.open(ProjectModalComponent, {
-      width: '80vw',
-      height: '80vh',
-      maxWidth: '80vw',
+      panelClass: 'project-modal',
+      width: '100vw',
+      height: '100vh',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+      autoFocus: false,
       data: { project }
     });
   }

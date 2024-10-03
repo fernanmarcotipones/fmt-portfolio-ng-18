@@ -1,59 +1,73 @@
-<div class="project-modal h-100">
-  <div class="row g-0 h-100">
-    <div class="col-md-9">
-      <div class="carousel">
-        <div class="carousel-inner">
-          @for (imageUrl of project()?.images; track imageUrl;) {
-            <div class="carousel-item" [ngClass]="{'active': $index === currentIndex}">
-              <img [src]="imageUrl" alt="Image {{ $index + 1 }}">
-            </div>
-          }
-        </div>
-        <div class="carousel-controls">
-          <button class="prev" (click)="prev()"><mat-icon>chevron_left</mat-icon></button>
-          <button class="next" (click)="next()"><mat-icon>chevron_right</mat-icon></button>
-        </div>
-        <div class="carousel-preview">
-          @for (imageUrl of project()?.images; track imageUrl; let i = $index) {
-            <div class="carousel-preview-item" [ngClass]="{'active': $index === currentIndex}" (click)="setActiveImage(i)">
-              <img [src]="imageUrl" alt="Image {{ i + 1 }}">
-            </div>
-          }
-        </div>
+<div class="project-modal">
+  <div class="header center flex-wrap" [ngStyle]="{'background-image': 'url(' + project()?.images[0] + ')'}">
+    <div class="overlay"></div>
+    <div class="content p-4 p-md-5">
+      <div class="title d-flex align-items-end justify-content-center align-items-md-center justify-content-md-start">
+        <h1>{{project()?.title}}</h1>
       </div>
-      <div class="description py-4">
-        <ul class="list-group-flush h-100">
-          @for (description of project()?.descriptions; track description;) {
-            <li class="list-group-item-primary">
-              <p class="mb-0">{{description}}</p>
-            </li>
+      <div class="techs d-flex align-items-center justify-content-center align-items-md-end justify-content-md-end">
+        <div class="stacks row g-0 p-1 mx-3 p-md-2 mx-md-0">
+          @for (tech of project()?.techStack; track tech;) {
+            <div class="tech col-3 center">
+              <img 
+                [matTooltip]="tech"
+                matTooltipPosition="below"
+                [src]="profileService.getTechImgUrl(tech)"
+                alt="Tech Image {{ $index }}">
+            </div>
           }
-        </ul>
+        </div>
       </div>
     </div>
-    <div class="col-md-3">
-      <div class="logo center px-2">
-        <a href="{{project()?.link}}" target="_blank" class="w-75">
-          <img [src]="project()?.logo" alt="Project Logo" class="w-100 img-circle">
-        </a>
-      </div>
-      <div class="info px-2 py-5 center-y flex-wrap text-center">
-        <h3>{{project()?.title}}</h3>
-        <h4>{{project()?.company}}</h4>
-        <h4>
-          {{project()?.startDate | date: 'MMMM yyyy'}} - 
-          {{project()?.endDate ? (project()?.endDate | date: 'MMMM yyyy') : 'Present'}}
-        </h4>
-      </div>
-      <div class="techs px-2">
-        <div class="row g-0 center-y h-100">
-          @for (tech of project()?.techStack; track tech;) {
-            <div class="col-md-3 center" [matTooltip]="tech" matTooltipPosition="above">
-              <img [src]="profileService.getTechImgUrl(tech)" alt="Tech Image {{ $index }}" class="w-75">
-            </div>
-          }
+  </div>
+  <div class="info p-0 p-md-5">
+    <div class="description p-4 p-md-0">
+      <ul class="list-group-flush h-100 fs-2 mb-0 mb-md-5">
+        @for (description of project()?.descriptions; track description;) {
+          <li class="list-group-item-primary">
+            <p class="mb-0">{{description}}</p>
+          </li>
+        }
+      </ul>
+    </div>
+    <div class="details row g-0 center-y">
+      <div class="company col-md-8 col-lg-6 center-y px-4 py-5 p-md-0">
+        <div class="logo center">
+          <img [src]="project()?.companyImgUrl" alt="Company Logo" class="img-fluid">
+        </div>
+        <div class="duration">
+          <h3 class="mb-0 fs-3">
+            Worked in this project for {{getMonthDifference(project()?.startDate, project()?.endDate)}} months
+          </h3>
+          <span class="fs-4">
+            {{project()?.startDate | date: 'MMMM yyyy'}} - 
+            {{project()?.endDate ? (project()?.endDate | date: 'MMMM yyyy') : 'Present'}}
+          </span>
         </div>
       </div>
+      <div class="project-logo col-md-4 col-lg-6 center-y justify-content-center justify-content-md-end my-5 my-md-0">
+        <img [src]="project()?.logo" alt="Project Logo" class="img-fluid" (click)="profileService.openLink(project()?.link)">
+      </div>
+    </div>
+  </div>
+  <div class="carousel">
+    <div class="carousel-inner">
+      @for (imageUrl of project()?.images; track imageUrl;) {
+        <div class="carousel-item" [ngClass]="{'active': $index === currentIndex}">
+          <img [src]="imageUrl" alt="Image {{ $index + 1 }}">
+        </div>
+      }
+    </div>
+    <div class="carousel-controls">
+      <button class="prev" (click)="prev()"><mat-icon>chevron_left</mat-icon></button>
+      <button class="next" (click)="next()"><mat-icon>chevron_right</mat-icon></button>
+    </div>
+    <div class="carousel-preview">
+      @for (imageUrl of project()?.images; track imageUrl; let i = $index) {
+        <div class="carousel-preview-item" [ngClass]="{'active': $index === currentIndex}" (click)="setActiveImage(i)">
+          <img [src]="imageUrl" alt="Image {{ i + 1 }}">
+        </div>
+      }
     </div>
   </div>
   <button class="close">

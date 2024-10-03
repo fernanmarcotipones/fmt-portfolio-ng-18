@@ -30,6 +30,17 @@ export class ProjectModalComponent {
     this.setActiveImage(this.currentIndex);
   }
 
+  getMonthDifference(startDate: string, endDate: string): number {
+    const start = new Date(startDate);
+    const end = endDate ? new Date(endDate): new Date();
+    const yearDiff: number = end.getFullYear() - start.getFullYear();
+    const startDiff: number = yearDiff > 0 ? 12 - start.getMonth() : end.getMonth() - start.getMonth();
+    const endDiff: number = yearDiff > 0 ? end.getMonth() + 1 : 0;
+    const betweenDiff: number = yearDiff > 0 ? (yearDiff-1) * 12 : 0;
+    const months: number = Number(startDiff + endDiff + betweenDiff);
+    return months;
+  }
+  
   close() {
     this.matDialog.closeAll();
   }

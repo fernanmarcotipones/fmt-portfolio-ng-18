@@ -11,9 +11,9 @@
             <img class="img-fluid" [src]="experience?.companyImgUrl" alt="Company Image">
           </div>
           <div class="col-9">
-            <h3>{{experience?.title}}</h3>
-            <h4>{{experience?.company}}</h4>
-            <h4>
+            <h3 class="mb-0">{{experience?.title}}</h3>
+            <h4 class="mb-0">{{experience?.company}}</h4>
+            <h4 class="mb-0">
               {{experience?.startDate | date: 'MMMM yyyy'}} - 
               {{experience?.isCurrentCompany ? 'Present' : (experience?.endDate | date: 'MMMM yyyy')}}
             </h4>

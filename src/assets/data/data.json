@@ -166,6 +166,7 @@
       {
         "title": "Makati Medical Society Website",
         "company": "98Labs",
+        "companyImgUrl": "assets/images/companies/98labs.jpeg",
         "startDate": "2017-05-01T00:00:00.000Z",
         "endDate": "2017-09-31T00:00:00.000Z",
         "descriptions": [
@@ -191,10 +192,11 @@
       {
         "title": "Electric Studio Website",
         "company": "98Labs",
+        "companyImgUrl": "assets/images/companies/98labs.jpeg",
         "startDate": "2017-10-01T00:00:00.000Z",
         "endDate": "2018-02-01T00:00:00.000Z",
         "descriptions": [
-          "As a Full Stack Developer, I actively participated in the revamp and expansion of Electric Studio\\'s website application.",
+          "As a Full Stack Developer, I actively participated in the revamp and expansion of Electric Studio's website application.",
           "Improved existing project with outdated frameworks and added new features for client and admin sides.",
           "Utilized HTML5, SASS, AngularJS, Python, and MongoDB for responsive UI and seamless functionality.",
           "Upgraded website allowing customers to book cycling classes online, with admin web app for content management."
@@ -219,6 +221,7 @@
       {
         "title": "DevLive Website and Mobile",
         "company": "98Labs",
+        "companyImgUrl": "assets/images/companies/98labs.jpeg",
         "startDate": "2018-02-27T00:00:00.000Z",
         "endDate": "2019-07-01T00:00:00.000Z",
         "descriptions": [
@@ -256,6 +259,7 @@
       {
         "title": "Electric Studio Mobile",
         "company": "98Labs",
+        "companyImgUrl": "assets/images/companies/98labs.jpeg",
         "startDate": "2019-05-01T00:00:00.000Z",
         "endDate": "2019-06-01T00:00:00.000Z",
         "descriptions": [
@@ -282,6 +286,7 @@
       {
         "title": "Gifmo Admin Portal Website",
         "company": "98Labs",
+        "companyImgUrl": "assets/images/companies/98labs.jpeg",
         "startDate": "2019-07-01T00:00:00.000Z",
         "endDate": "2019-10-01T00:00:00.000Z",
         "descriptions": [
@@ -311,6 +316,7 @@
       {
         "title": "Electric Studio Website & Mobile Rewrite",
         "company": "98Labs",
+        "companyImgUrl": "assets/images/companies/98labs.jpeg",
         "startDate": "2019-10-01T00:00:00.000Z",
         "endDate": "2020-03-01T00:00:00.000Z",
         "descriptions": [
@@ -339,6 +345,7 @@
       {
         "title": "Sun IP Website",
         "company": "Legalsight",
+        "companyImgUrl": "assets/images/companies/legalsight.jpeg",
         "startDate": "2020-03-01T00:00:00.000Z",
         "endDate": "2022-08-01T00:00:00.000Z",
         "descriptions": [
@@ -368,6 +375,7 @@
       {
         "title": "Park Evaluations Website",
         "company": "Legalsight",
+        "companyImgUrl": "assets/images/companies/legalsight.jpeg",
         "startDate": "2020-03-02T00:00:00.000Z",
         "endDate": "2022-08-01T00:00:00.000Z",
         "descriptions": [
@@ -398,6 +406,7 @@
       {
         "title": "Park Advertising Website",
         "company": "Legalsight",
+        "companyImgUrl": "assets/images/companies/legalsight.jpeg",
         "startDate": "2020-08-01T00:00:00.000Z",
         "endDate": "2022-08-01T00:00:00.000Z",
         "descriptions": [
@@ -429,6 +438,7 @@
       {
         "title": "Blue Compass Website",
         "company": "FEI Systems",
+        "companyImgUrl": "assets/images/companies/feisystems.jpeg",
         "startDate": "2022-09-01T00:00:00.000Z",
         "endDate": null,
         "descriptions": [

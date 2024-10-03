@@ -84,3 +84,10 @@ body {
 .language-tooltip.mat-mdc-tooltip .mat-mdc-tooltip-surface {
   text-align: center;
 }
+
+.project-modal.mat-mdc-dialog-panel {
+  .mat-mdc-dialog-surface {
+    border-radius: 0;
+  }
+}
+

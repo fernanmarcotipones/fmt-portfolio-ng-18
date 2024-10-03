@@ -68,4 +68,9 @@ export class ProfileService {
   getTechImgUrl(techName: string): string {
     return `assets/images/tech/${techName.toLocaleLowerCase()}.svg`
   }
+
+  openLink(link: string): void {
+    if (!link) return;
+    window.open(link, "_blank");
+  }
 }
