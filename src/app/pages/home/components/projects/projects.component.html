@@ -13,7 +13,7 @@
           <div class="filter col-3 col-md-6 center-y justify-content-end">
             <mat-menu #filter="matMenu" class="project-filters">
               <div class="row g-0 center-y flex-wrap" style="width: 400px">
-                <div class="col-md-4">
+                <div class="col-4">
                   <mat-checkbox 
                     (change)="clearFilter()"
                     (click)="$event.stopPropagation()"
@@ -22,7 +22,7 @@
                   </mat-checkbox>
                 </div>
                 @for (tech of techs(); track tech.name) {
-                  <div class="col-md-4">
+                  <div class="col-4">
                     <mat-checkbox
                       (change)="toggleFilter(tech.name)"
                       (click)="$event.stopPropagation()"
