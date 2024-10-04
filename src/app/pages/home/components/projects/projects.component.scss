@@ -19,6 +19,11 @@
       .search {
         input {
           width: 100%;
+          border-color: rgba(0,0,0,0.9);
+
+          &:focus {
+            box-shadow: none;
+          }
 
           @media (min-width: 992px) {
             width: 75%;
@@ -38,7 +43,7 @@
         }
 
         mat-button-toggle {
-          border-radius: 15px;
+          border-radius: 10px;
         }
       }
     }
