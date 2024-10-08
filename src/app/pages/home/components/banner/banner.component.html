@@ -1,4 +1,5 @@
-<div class="banner">
+<div class="banner" 
+  [ngStyle]="{'background-image': 'url(' + data()?.bannerBGImgUrl + ')', 'background-position-y': bannerBGPosition}">
   <div class="bg-effect"></div>
   <div class="content">
     <div class="container">

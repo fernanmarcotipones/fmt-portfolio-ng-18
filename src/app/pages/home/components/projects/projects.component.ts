@@ -1,22 +1,23 @@
-import { Component, computed, input, signal, inject } from '@angular/core';
-import { ProfileService } from '../../../../services/profile.service';
+import { Component, computed, signal, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ProjectModalComponent } from './project-modal/project-modal.component';
+import { BaseComponent } from '../base.component';
 
 @Component({
   selector: 'fmt-projects',
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
-export class ProjectsComponent {
+export class ProjectsComponent extends BaseComponent {
   private matDialog = inject(MatDialog);
-  profileService = inject(ProfileService);
-
-  data = input<any>(null);
   searchText = signal<string>('');
   techs = computed<any[]>(() => this.profileService.data()?.techStackData?.techs);
   filters = signal<string[]>([]);
   projects = computed<any[]>(() => this.setupProjects(this.data(), this.searchText(), this.filters()));
+
+  override onScrollToDo(): void {
+    console.log(`Projects is inside of the viewport`);
+  }
 
   setupProjects(data: any, searchText: string, filters: string[]): any[] {
     let projects: any[] = data?.projects || [];

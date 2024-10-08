@@ -1,9 +1,10 @@
+@import "variables";
+
 .banner {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: rgb(35, 38, 46);
-  background: linear-gradient(0deg, rgba(35, 38, 46, 1) 0%, rgba(221, 221, 221, 1) 40% 60%, rgba(35, 38, 46, 1) 100%);
+  background-size: cover;
 
   .bg-effect,
   .content {
@@ -15,11 +16,9 @@
   }
 
   .bg-effect {
-    background: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(0deg, rgba($dark-color, 0.5) 0%, rgba($primary-color, 0.5) 25% 75%, rgba($dark-color, 0.5) 100%);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7spx);
   }
 
   .content {
@@ -46,18 +45,20 @@
 
       h1,
       h2 {
-        text-shadow: 3px 2px white;
+        text-shadow: 3px 2px $dark-color;
         font-family: "Josefin Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
       }
 
       h1 {
+        color: $light-color;
         font-weight: bold;
         margin-bottom: 0;
       }
 
       h2 {
+        color: $secondary-color;
         margin-top: 0.5rem;
         font-family: "Rajdhani", sans-serif;
         font-style: normal;

@@ -1,6 +1,7 @@
-import { Component, inject, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, HostListener, inject, OnDestroy, OnInit, signal } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { ProfileService } from '../../services/profile.service';
+import { ScrollService } from '../../services/scroll.service';
 import { ComponentsModule } from './components/components.module';
 
 @Component({
@@ -14,8 +15,14 @@ import { ComponentsModule } from './components/components.module';
 export class HomeComponent implements OnInit, OnDestroy {
   private subscriptions: Subscription[] = [];
   private profileService = inject(ProfileService);
+  private scrollService = inject(ScrollService);
   data = signal<any>(null);
   isLoading: boolean = true;
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: any) {
+    this.scrollService.setupScrollService(event);
+  }
 
   ngOnInit(): void {
     const profileSub: Subscription = this.profileService
