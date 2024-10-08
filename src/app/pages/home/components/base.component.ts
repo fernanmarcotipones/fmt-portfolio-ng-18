@@ -11,15 +11,17 @@ export class BaseComponent {
   scrollService = inject(ScrollService);
   profileService = inject(ProfileService);
   data = input<any>(null);
+  componentTop: number = 0;
+  componentBottom: number = 0;
   isInsideViewport: boolean = true;
   isOutsideViewport: boolean = false;
 
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
-    const componentTop = this.elementRef.nativeElement.offsetTop;
-    const componentBottom = componentTop + this.elementRef.nativeElement.offsetHeight;
-    this.isInsideViewport = this.scrollService.isInsideViewport(componentTop, componentBottom);
-    this.isOutsideViewport = this.scrollService.isOutsideViewport(componentTop, componentBottom);
+    this.componentTop = this.elementRef.nativeElement.offsetTop;
+    this.componentBottom = this.componentTop + this.elementRef.nativeElement.offsetHeight;
+    this.isInsideViewport = this.scrollService.isInsideViewport(this.componentTop, this.componentBottom);
+    this.isOutsideViewport = this.scrollService.isOutsideViewport(this.componentTop, this.componentBottom);
 
     if (this.isInsideViewport) this.onScrollToDo();
   }

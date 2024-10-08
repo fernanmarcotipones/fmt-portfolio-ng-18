@@ -17,7 +17,7 @@ export class BannerComponent extends BaseComponent {
   override onScrollToDo(): void {
     this.bannerBGPosition = `calc(${this.scrollService.scrollPosition() / -2}px)`;
     this.bannerImagePosition = `calc(${this.scrollService.scrollPosition() / 2}px)`;
-    this.bannerOpacity = 100 - (this.scrollService.scrollPosition() / 10);
+    this.bannerOpacity = 100 - ((this.scrollService.scrollPosition() / this.componentBottom) * 100);
     console.log(`Banner is inside of the viewport`);
   }
 }

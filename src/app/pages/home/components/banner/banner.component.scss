@@ -17,7 +17,7 @@
   }
 
   .bg-effect {
-    background: linear-gradient(0deg, rgba($dark-color, 0.5) 0%, rgba($primary-color, 0.5) 25% 75%, rgba($dark-color, 0.5) 100%);
+    background: linear-gradient(0deg, rgba($light-color, 0.1) 0%, rgba($primary-color, 0.5) 25% 75%, rgba($light-color, 0.1) 100%);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7spx);
   }
