@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
@@ -50,6 +52,6 @@ import { ProfileService } from '../../../services/profile.service';
   ],
   providers: [
     ProfileService,
-  ]
+  ],
 })
 export class ComponentsModule { }

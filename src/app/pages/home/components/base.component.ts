@@ -11,7 +11,7 @@ export class BaseComponent {
   scrollService = inject(ScrollService);
   profileService = inject(ProfileService);
   data = input<any>(null);
-  isInsideViewport: boolean = false;
+  isInsideViewport: boolean = true;
   isOutsideViewport: boolean = false;
 
   @HostListener('window:scroll', ['$event'])
