@@ -13,8 +13,8 @@ import { ComponentsModule } from './components/components.module';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  profileService = inject(ProfileService);
   private subscriptions: Subscription[] = [];
-  private profileService = inject(ProfileService);
   private scrollService = inject(ScrollService);
   data = signal<any>(null);
   isLoading: boolean = true;

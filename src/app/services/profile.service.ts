@@ -1,13 +1,14 @@
 import { HttpClient } from "@angular/common/http";
-import { inject, Injectable, Signal, signal } from '@angular/core';
+import { inject, Injectable, signal } from '@angular/core';
 import { Observable, tap } from "rxjs";
-import { clone, cloneDeep } from 'lodash-es';
+import { cloneDeep } from 'lodash-es';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfileService {
   data = signal<any>(null);
+  isBannerLoaded = signal<boolean>(false);
   private dummyDataUrl: string = 'assets/data/data.json';
   private http = inject(HttpClient);
 

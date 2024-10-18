@@ -14,8 +14,9 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
   bannerBGPosition: string = '0px';
   bannerImagePosition: string = '0px';
   bannerOpacity: number = 100;
-  state: string = 'start';
-  typeSpeed: number = 8;
+  typeSpeed: number = 10;
+  totalAnimationDuration: number = 0;
+  isLogoAnimationDone: boolean = false;
   bannerTextsData = computed<any[]>(() => {
     const firstName: string = this.data()?.firstName || '';
     const lastName: string = this.data()?.lastName || '';
@@ -32,16 +33,26 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    this.setupAnimationTimings();
+  }
+
+  setupAnimationTimings(): void {
     setTimeout(() => {
-      this.state = 'end';
-    }, 500);
+      this.isLogoAnimationDone = true;
+    }, 700);
+
+    setTimeout(() => {
+      this.profileService.isBannerLoaded.set(true);
+    }, this.totalAnimationDuration * 1000);
   }
 
   getBannerTextsData(bannerTexts: string[]): any[] {
     if(!bannerTexts || !bannerTexts.length) return [];
 
     const bannerTextsData: any[] = [];
+
     let currentDelay: number = 0;
+    this.totalAnimationDuration = 0;
 
     bannerTexts.forEach((text: string, index: number) => {
       if (!text) {
@@ -56,7 +67,8 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
       const blinkIteration: number = index === bannerTexts.length - 1 ?
         Math.round(animationDuration / blinkSpeed) + 3 :
         Math.round(animationDuration / blinkSpeed);
-        
+      this.totalAnimationDuration += animationDuration;
+
       const bannerTextObject: any = { text, animationDuration, animationDelay, blinkSpeed, blinkIteration };
       bannerTextsData.push(bannerTextObject);
     });
