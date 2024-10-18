@@ -73,12 +73,6 @@
 
 }
 
-$typeSpeed: 3s;
-$wordDelay: calc($typeSpeed + 1s);
-$typeWordCount: 18;
-$blinkDuration: 6;
-$blinkSpeed: 0.5s;
-
 .type-animation-box {
   width: max-content;
   position: relative;
@@ -99,15 +93,17 @@ $blinkSpeed: 0.5s;
 
   .before {
     z-index: 2;
-    background: black;
-    animation: type $typeSpeed steps($typeWordCount) forwards;
+    background: rgba($primary-color, 1);
+    animation: type 1s steps(1) forwards;
   }
 
   .after {
+    height: 90%;
+    margin: auto 0;
     z-index: 3;
     width: 0.25em;
     background: transparent;
-    animation: type $typeSpeed steps($typeWordCount) forwards, blink $blinkSpeed steps($typeWordCount) $blinkDuration;
+    animation: type 1s steps(1) forwards, blink 1s steps(1) 1;
   }
 }
 
@@ -116,5 +112,5 @@ $blinkSpeed: 0.5s;
 }
 
 @keyframes blink {
-  to { background: white; }
+  to { background: $light-color; }
 }
