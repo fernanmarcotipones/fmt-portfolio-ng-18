@@ -4,15 +4,23 @@
   <div class="content">
     <div class="container">
       <div class="row d-flex align-items-stretch align-items-md-center">
-        <div class="col-md-4 center-x align-items-end align-items-md-center"
+        <div @introImageAnimation class="logo col-md-4 center-x align-items-end align-items-md-center"
           [ngStyle]="{'transform': 'translateY(' + bannerImagePosition + ')', 'opacity.%': bannerOpacity}">
-          <img @introImageAnimation class="img-fluid" [src]="data()?.bannerImgUrl" alt="Banner Image" />
+          <img class="img-fluid" [src]="data()?.bannerImgUrl" alt="Banner Image" />
         </div>
-        <div @introImageAnimation class="title col-md-8 mt-4 mt-md-0"
+        <div class="title col-md-8 mt-4 mt-md-0"
           [ngStyle]="{'transform': 'translateY(' + bannerImagePosition + ')', 'opacity.%': bannerOpacity}">
-          <h1>{{data()?.firstName}}</h1>
-          <h1>{{data()?.lastName}}</h1>
-          <h2 class="fst-italic">{{data()?.position}}</h2>
+          @for (text of bannerTexts(); track text) {
+            <div class="type-animation-box">
+              <div [ngStyle]="getTypeBeforeAnimationStyle(text, $index)" class="before"></div>
+              @if (!$last) {
+                <h1 class="text">{{text}}</h1>
+              } @else {
+                <h2 class="text">{{text}}</h2>
+              }
+              <div [ngStyle]="getTypeAfterAnimationStyle(text, $index, $last)" class="after"></div>
+            </div>
+          }
         </div>
       </div>
     </div>
