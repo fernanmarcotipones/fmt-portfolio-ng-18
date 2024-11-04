@@ -77,40 +77,49 @@
   width: max-content;
   position: relative;
 
-  .after,
-  .before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  h1 {
+    .char-container .cursor{
+      height: 100%;
+    }
+  }
+
+  h2 {
+    .char-container .cursor{
+      height: 60%;
+    }
   }
 
   .text {
     z-index: 1;
-  }
 
-  .before {
-    z-index: 2;
-    background: rgba($primary-color, 1);
-    animation: type 1s steps(1) forwards;
-  }
+    .char-container {
+      position: relative;
+      display: inline;
+      opacity: 0;
+      animation: char 1s forwards;
+      
+      .cursor {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -4px;
+        margin: auto 0;
+        z-index: 2;
+        width: 4px;
+        background: $light-color;
+        opacity: 1;
+        animation: cursor 1s forwards;
+      }
+    }
 
-  .after {
-    height: 90%;
-    margin: auto 0;
-    z-index: 3;
-    width: 0.25em;
-    background: transparent;
-    animation: type 1s steps(1) forwards, blink 1s steps(1) 1;
   }
 }
 
-@keyframes type {
-  to { left: 100% }
+@keyframes char {
+  to { opacity: 1; }
 }
 
-@keyframes blink {
-  to { background: $light-color; }
+@keyframes cursor {
+  to { opacity: 0; }
 }

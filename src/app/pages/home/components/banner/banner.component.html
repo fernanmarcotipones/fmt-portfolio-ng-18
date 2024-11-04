@@ -10,17 +10,29 @@
         </div>
         <div class="title col-md-8 mt-4 mt-md-0"
           [ngStyle]="{'transform': 'translateY(' + bannerImagePosition + ')', 'opacity.%': bannerOpacity}">
-          @for (textData of bannerTextsData(); track textData?.text) {
+          @for (textData of bannerTextsData(); track textData.text) {
               @if (isLogoAnimationDone) {
               <div class="d-flex justify-content-center justify-content-md-start">
                 <div class="type-animation-box">
-                  <div [ngStyle]="getTypeBeforeAnimationStyle(textData)" class="before"></div>
                   @if (!$last) {
-                    <h1 class="text">{{textData?.text}}</h1>
+                    <h1 class="text">
+                      @for (charData of textData?.charsData; track charData.char) {
+                        <ng-container *ngTemplateOutlet="charContainer; context: { charData }"></ng-container>
+                      }
+                    </h1>
                   } @else {
-                    <h2 class="text">{{textData?.text}}</h2>
+                    <h2 class="text">
+                      @for (charData of textData.charsData; track charData.char) {
+                        <ng-container *ngTemplateOutlet="charContainer; context: { charData }"></ng-container>
+                      }
+                    </h2>
                   }
-                  <div [ngStyle]="getTypeAfterAnimationStyle(textData, $last)" class="after"></div>
+                  <ng-template #charContainer let-charData="charData">
+                    <div class="char-container" [ngStyle]="charData.charStyle">
+                      <span class="char">{{charData.char}}</span>
+                      <span class="cursor" [ngStyle]="charData.blinkStyle || charData.charStyle"></span>
+                    </div>
+                  </ng-template>
                 </div>
               </div>
               }

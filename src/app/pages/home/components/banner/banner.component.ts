@@ -64,44 +64,48 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
       currentDelay += index !== 0 ? bannerTextsData[index-1]?.animationDuration : 0;
       const animationDuration: number = text.length / this.typeSpeed;
       const animationDelay: number = currentDelay;
-      const blinkSpeed: number = 0.5;
-      const blinkIteration: number = index === bannerTexts.length - 1 ?
-        Math.round(animationDuration / blinkSpeed) + 3 :
-        Math.round(animationDuration / blinkSpeed);
       this.totalAnimationDuration += animationDuration;
 
-      const bannerTextObject: any = { text, animationDuration, animationDelay, blinkSpeed, blinkIteration };
-      bannerTextsData.push(bannerTextObject);
+      const charsData: any[] = [];
+      text.split('').forEach((char: string, charIndex: number) => {
+        const charAnimationDuration: number = animationDuration / text?.length;
+        const charAnimationDelay: number = animationDelay + (charAnimationDuration * charIndex);
+        const charObject: any = { charAnimationDuration, charAnimationDelay };
+        const charStyle: any = this.getTypeCharAnimationStyle(charObject);
+        const charData: any = { char, charStyle };
+        const isLast: boolean = index === bannerTexts.length - 1 && charIndex === text?.length - 1;
+        if(isLast) charData['blinkStyle'] = this.getTypeBlinkAnimationStyle(charObject);
+        charsData.push(charData);
+      })
+
+      const textData: any = { text, charsData, animationDuration };
+      bannerTextsData.push(textData);
     });
 
     this.totalAnimationDuration = this.totalAnimationDuration * 1000;
-
     return bannerTextsData;
   }
 
-  getTypeBeforeAnimationStyle(textData: any): any {
-    if(!textData) return null;
+  getTypeCharAnimationStyle(charData: any): any {
+    if(!charData) return null;
 
     const style: any = {
-      'animation-duration': `${textData.animationDuration}s`,
-      'animation-delay': `${textData.animationDelay}s`,
-      'animation-timing-function': `steps(${textData.text?.length})`,
+      'animation-duration': `${charData.charAnimationDuration}s`,
+      'animation-delay': `${charData.charAnimationDelay}s`,
     };
 
     return style;
   }
 
-  getTypeAfterAnimationStyle(textData: any, isLast: boolean): any {
-    if(!textData) return null;
+  getTypeBlinkAnimationStyle(charData: any): any {
+    if(!charData) return null;
 
     const style: any = {
-      'animation-duration': `${textData.animationDuration}s, ${textData.blinkSpeed}s`,
-      'animation-delay': `${textData.animationDelay}s`,
-      'animation-timing-function': `steps(${textData.text?.length}), steps(${textData.text?.length})`,
-      'animation-iteration-count': `1, ${textData.blinkIteration}`,
+      'animation-duration': `0.5s`,
+      'animation-timing-function': 'steps(12)',
+      'animation-iteration-count': '4',
+      'animation-delay': `${charData.charAnimationDelay}s`,
     };
-
-    if (isLast) style['height'] = '50%';
 
     return style;
   }
