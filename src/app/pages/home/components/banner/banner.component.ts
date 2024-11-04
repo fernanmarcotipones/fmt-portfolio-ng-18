@@ -16,6 +16,7 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
   bannerOpacity: number = 100;
   typeSpeed: number = 10;
   totalAnimationDuration: number = 0;
+  logoAnimationDuration: number = 700;
   isLogoAnimationDone: boolean = false;
   bannerTextsData = computed<any[]>(() => {
     const firstName: string = this.data()?.firstName || '';
@@ -39,11 +40,11 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
   setupAnimationTimings(): void {
     setTimeout(() => {
       this.isLogoAnimationDone = true;
-    }, 700);
+    }, this.logoAnimationDuration);
 
     setTimeout(() => {
       this.profileService.isBannerLoaded.set(true);
-    }, this.totalAnimationDuration * 1000);
+    }, this.totalAnimationDuration + this.logoAnimationDuration);
   }
 
   getBannerTextsData(bannerTexts: string[]): any[] {
@@ -72,6 +73,8 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
       const bannerTextObject: any = { text, animationDuration, animationDelay, blinkSpeed, blinkIteration };
       bannerTextsData.push(bannerTextObject);
     });
+
+    this.totalAnimationDuration = this.totalAnimationDuration * 1000;
 
     return bannerTextsData;
   }
