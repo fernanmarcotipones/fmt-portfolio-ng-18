@@ -35,9 +35,23 @@ export const typeAnimations = {
   ])
 };
 
-export const introImageAnimation: AnimationTriggerMetadata = trigger('introImageAnimation', [
+export const logoBannerAnimation: AnimationTriggerMetadata = trigger('logoBannerAnimation', [
   transition(':enter' , [
-    style({ opacity: 0, transform: 'translateY(-200px)' }),
-    animate('0.7s ease-in', style({ opacity: 1, transform: 'translateY(0)' })),
+    style({ opacity: 0 }),
+    animate('1s ease-in', style({ opacity: 1 })),
+  ]),
+]);
+
+export const bannerSectionAnimation: AnimationTriggerMetadata = trigger('bannerSectionAnimation', [
+  transition(':enter' , [
+    style({ transform: 'translate(0,100%)' }),
+    animate('1s ease-in', style({ transform: 'translate(0,0)' })),
+  ]),
+]);
+
+export const loadingPageAnimation: AnimationTriggerMetadata = trigger('loadingPageAnimation', [
+  transition(':leave' , [
+    style({ transform: 'translate(0,0)' }),
+    animate('1s ease-out', style({ transform: 'translate(0,-100%)' })),
   ]),
 ]);

@@ -4,11 +4,15 @@ $loading-animation-duration: 2s;
 
 .home {
   min-height: 100vh;
+  position: relative;
 
   .loading {
     width: 100vw;
     height: 100vh;
     background-color: $primary-color;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     .content-container {
       position: relative;

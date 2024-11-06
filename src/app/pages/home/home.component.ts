@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import { ProfileService } from '../../services/profile.service';
 import { ScrollService } from '../../services/scroll.service';
 import { ComponentsModule } from './components/components.module';
+import { loadingPageAnimation } from './components/animations';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,10 @@ import { ComponentsModule } from './components/components.module';
   imports: [ComponentsModule],
   providers: [ProfileService],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  animations: [
+    loadingPageAnimation,
+  ],
 })
 export class HomeComponent implements OnInit, OnDestroy {
   profileService = inject(ProfileService);

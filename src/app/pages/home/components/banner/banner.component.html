@@ -1,10 +1,10 @@
-<div class="banner" 
+<div class="banner" @bannerSectionAnimation
   [ngStyle]="{'background-image': 'url(' + data()?.bannerBGImgUrl + ')', 'background-position-y': bannerBGPosition}">
   <div class="bg-effect"></div>
   <div class="content">
     <div class="container">
       <div class="row d-flex align-items-stretch align-items-md-center">
-        <div @introImageAnimation class="logo col-md-4 center-x align-items-end align-items-md-center"
+        <div @logoBannerAnimation class="logo col-md-4 center-x align-items-end align-items-md-center"
           [ngStyle]="{'transform': 'translateY(' + bannerImagePosition + ')', 'opacity.%': bannerOpacity}">
           <img class="img-fluid" [src]="data()?.bannerImgUrl" alt="Banner Image" />
         </div>

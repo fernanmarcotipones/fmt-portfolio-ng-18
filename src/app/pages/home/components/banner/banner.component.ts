@@ -1,13 +1,14 @@
 import { AfterViewInit, Component, computed } from '@angular/core';
 import { BaseComponent } from '../base.component';
-import { introImageAnimation } from '../animations';
+import { bannerSectionAnimation, logoBannerAnimation } from '../animations';
 
 @Component({
   selector: 'fmt-banner',
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.scss',
   animations: [
-    introImageAnimation,
+    logoBannerAnimation,
+    bannerSectionAnimation,
   ],
 })
 export class BannerComponent extends BaseComponent implements AfterViewInit {
@@ -16,7 +17,7 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
   bannerOpacity: number = 100;
   typeSpeed: number = 10;
   totalAnimationDuration: number = 0;
-  logoAnimationDuration: number = 700;
+  logoAnimationDuration: number = 1000;
   isLogoAnimationDone: boolean = false;
   bannerTextsData = computed<any[]>(() => {
     const firstName: string = this.data()?.firstName || '';
