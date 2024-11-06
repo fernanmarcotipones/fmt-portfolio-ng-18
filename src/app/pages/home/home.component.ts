@@ -33,7 +33,7 @@ export class HomeComponent implements OnInit, OnDestroy {
           this.data.set(this.profileService.data());
           this.isLoading = false;
           console.log('data', this.data());
-        }, 300);
+        }, 2000);
     });
 
     this.subscriptions.push(profileSub);
