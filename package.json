@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --base-href=https://fernanmarcotipones.github.io/fmt-portfolio/",
+    "deploy": "npm run build:prod && rm -rf ../Deployment/fmt-portfolio/* && cp -r dist/* ../Deployment/fmt-portfolio/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
