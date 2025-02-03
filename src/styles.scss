@@ -15,12 +15,9 @@ $fmt-portfolio-ng-18-theme: mat.define-theme((
   @include mat.all-component-themes($fmt-portfolio-ng-18-theme);
 }
 
+@import 'fonts';
 @import 'variables';
 @import 'bootstrap/dist/css/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Teko:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 html, body { height: 100%; }
 
