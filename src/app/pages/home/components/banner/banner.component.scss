@@ -28,6 +28,12 @@
       height: inherit;
     }
 
+    .title,
+    .logo {
+      will-change: transform, opacity;
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out; 
+    }
+
     .logo {
       // opacity: 0;
       img {
