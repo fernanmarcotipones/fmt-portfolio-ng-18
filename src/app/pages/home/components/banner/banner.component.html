@@ -10,19 +10,19 @@
         </div>
         <div class="title col-md-8 mt-4 mt-md-0"
           [ngStyle]="{'transform': 'translateY(' + bannerImagePosition + ')', 'opacity.%': bannerOpacity}">
-          @for (textData of bannerTextsData(); track textData.text) {
+          @for (textData of bannerTextsData(); track $index) {
               @if (isLogoAnimationDone) {
               <div class="d-flex justify-content-center justify-content-md-start">
                 <div class="type-animation-box">
                   @if (!$last) {
                     <h1 class="text">
-                      @for (charData of textData?.charsData; track charData.char) {
+                      @for (charData of textData?.charsData; track $index) {
                         <ng-container *ngTemplateOutlet="charContainer; context: { charData }"></ng-container>
                       }
                     </h1>
                   } @else {
                     <h2 class="text">
-                      @for (charData of textData.charsData; track charData.char) {
+                      @for (charData of textData.charsData; track $index) {
                         <ng-container *ngTemplateOutlet="charContainer; context: { charData }"></ng-container>
                       }
                     </h2>
