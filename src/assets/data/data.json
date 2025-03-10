@@ -8,7 +8,8 @@
   },
   "profileData": {
     "profileImgUrl": "assets/images/fmt-profile.jpg",
-    "description": "I’m a Front-end Developer with nearly 8 years of experience, working regularly with product team and back-end developers. I’m proficient in various JavaScript frameworks especially Angular and have a solid background in responsive design for both web and mobile projects. My keen attention to detail and ability to adapt to any project environment help me consistently deliver effective solutions.",
+    "description": "I’m a Front-end Developer with {{experienceLength}} of experience, working regularly with product team and back-end developers. I’m proficient in various JavaScript frameworks especially Angular and have a solid background in responsive design for both web and mobile projects. My keen attention to detail and ability to adapt to any project environment help me consistently deliver effective solutions.",
+    "startWorkingDate": "2017-02-01T00:00:00.000Z",
     "languages": [
       {
         "name": "English",

@@ -15,7 +15,7 @@ export class BannerComponent extends BaseComponent implements AfterViewInit {
   bannerBGPosition: string = '0px';
   bannerImagePosition: string = '0px';
   bannerOpacity: number = 100;
-  typeSpeed: number = 10;
+  typeSpeed: number = 15;
   totalAnimationDuration: number = 0;
   logoAnimationDuration: number = 1000;
   isLogoAnimationDone: boolean = false;
