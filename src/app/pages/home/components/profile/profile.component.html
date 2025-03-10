@@ -6,7 +6,7 @@
           <img class="img-fluid" [src]="data()?.profileImgUrl" alt="Profile Image">
         </div>
         <div class="col-md-7 col-lg-7 col-xl-9">
-          <p class="mb-0 px-2 fs-3">{{getDescription(data()?.description, data()?.startWorkingDate)}}</p>
+          <p class="mb-0 px-2 fs-3">{{getDescription(data()?.description)}}</p>
         </div>
       </div>
       @if (data()?.languages.length) {

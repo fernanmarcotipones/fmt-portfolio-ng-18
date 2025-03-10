@@ -13,7 +13,7 @@
   } @else {
     <fmt-banner [data]="data()?.bannerData"></fmt-banner>
     @if (profileService.isBannerLoaded()) {
-      <fmt-profile [data]="data()?.profileData"></fmt-profile>
+      <fmt-profile [data]="data()?.profileData" [experienceData]="data()?.experienceData"></fmt-profile>
       <fmt-experience [data]="data()?.experienceData"></fmt-experience>
       <fmt-tech-stack [data]="data()?.techStackData"></fmt-tech-stack>
       <fmt-projects [data]="data()?.projectData"></fmt-projects>
