@@ -15,7 +15,7 @@
     font-family: "Teko", sans-serif;
 
     .description {
-      flex: 7;
+      flex: 1;
       
       p {
         text-align: justify;
@@ -37,7 +37,7 @@
     }
 
     .languages {
-      flex: 3;
+      flex: 1;
       border-top: 1px solid black;
 
       img {
@@ -48,6 +48,10 @@
           transform: translateY(-20px);
         }
       }
+    }
+
+    .experiences {
+      flex: 1;
     }
   }
 }

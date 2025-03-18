@@ -3,13 +3,24 @@
   <div class="bg-effect"></div>
   <div class="content">
     <div class="container">
-      <div class="row d-flex align-items-stretch align-items-md-center">
-        <div @logoBannerAnimation class="logo col-md-4 center-x align-items-end align-items-md-center"
-          [ngStyle]="{'transform': 'translateY(' + bannerImagePosition + ')', 'opacity.%': bannerOpacity}">
+      <div class="row">
+        <div class="col-12 mb-3 mb-md-0 align-self-end align-self-md-center center-x">
+          <img class="img-fluid banner-img" [src]="data()?.bannerImgUrl" alt="Profile Image">
+        </div>
+        <div class="title col-12 mt-4 mt-md-0">
+          <h1>{{data()?.firstName}}</h1>
+          <h1>{{data()?.lastName}}</h1>
+          <h2>{{data()?.position}}</h2>
+        </div>
+        <div class="col-12 align-self-end">
+          <fmt-contact [data]="contactData()"></fmt-contact>
+        </div>
+      </div>
+      <!-- <div class="row d-flex align-items-stretch align-items-md-center">
+        <div @logoBannerAnimation class="logo col-md-4 center-x align-items-end align-items-md-center">
           <img class="img-fluid" [src]="data()?.bannerImgUrl" alt="Banner Image" />
         </div>
-        <div class="title col-md-8 mt-4 mt-md-0"
-          [ngStyle]="{'transform': 'translateY(' + bannerImagePosition + ')', 'opacity.%': bannerOpacity}">
+        <div class="title col-md-8 mt-4 mt-md-0">
           @for (textData of bannerTextsData(); track $index) {
               @if (isLogoAnimationDone) {
               <div class="d-flex justify-content-center justify-content-md-start">
@@ -38,7 +49,7 @@
               }
             }
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

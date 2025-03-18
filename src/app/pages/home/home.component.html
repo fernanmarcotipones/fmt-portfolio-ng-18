@@ -11,13 +11,15 @@
       </div>
     </div>
   } @else {
-    <fmt-banner [data]="data()?.bannerData"></fmt-banner>
+    <div class="profile">
+      <fmt-banner [data]="data()?.bannerData" [contactData]="data()?.contactData"></fmt-banner>
+    </div>
     @if (profileService.isBannerLoaded()) {
-      <fmt-profile [data]="data()?.profileData" [experienceData]="data()?.experienceData"></fmt-profile>
-      <fmt-experience [data]="data()?.experienceData"></fmt-experience>
-      <fmt-tech-stack [data]="data()?.techStackData"></fmt-tech-stack>
-      <fmt-projects [data]="data()?.projectData"></fmt-projects>
-      <fmt-contact [data]="data()?.contactData"></fmt-contact>
+      <div class="content">
+        <fmt-profile [data]="data()?.profileData" [experienceData]="data()?.experienceData"></fmt-profile>
+        <fmt-tech-stack [data]="data()?.techStackData"></fmt-tech-stack>
+        <fmt-projects [data]="data()?.projectData"></fmt-projects>
+      </div>
     }
   }
 </div>

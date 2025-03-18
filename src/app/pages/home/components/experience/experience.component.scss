@@ -1,8 +1,7 @@
 .experiences {
   min-height: 25vh;
-  background-color: black;
-  color: white;
-  border-bottom: 1px solid white;
+  color: black;
+  border-top: 1px solid black;
 
   .container,
   .row {
@@ -26,14 +25,15 @@
         width: 100%;
         border-radius: 100%;
         border-style: solid;
-        border-color:#0d6efd;
-        border-width: 0;
+        border-color:#000;
+        border-width: 1px;
       }
 
       &:hover {
         img {
           transform: scale(1.2);
           border-width: 3px;
+          border-color:#0d6efd;
         }
 
         h3, h4 {

@@ -77,4 +77,13 @@ $loading-animation-duration: 2s;
       }
     }
   }
+  
+  .profile {
+    width: 35vw;
+    position: fixed;
+  }
+
+  .content {
+    margin-left: 35vw;
+  }
 }

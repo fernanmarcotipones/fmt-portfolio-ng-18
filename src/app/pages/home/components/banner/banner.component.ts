@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, computed } from '@angular/core';
+import { AfterViewInit, Component, computed, input } from '@angular/core';
 import { BaseComponent } from '../base.component';
 import { bannerSectionAnimation, logoBannerAnimation } from '../animations';
 
@@ -12,6 +12,7 @@ import { bannerSectionAnimation, logoBannerAnimation } from '../animations';
   ],
 })
 export class BannerComponent extends BaseComponent implements AfterViewInit {
+  contactData = input<any>(null);
   bannerBGPosition: string = '0px';
   bannerImagePosition: string = '0px';
   bannerOpacity: number = 100;
